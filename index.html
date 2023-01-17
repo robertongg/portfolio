@@ -1,0 +1,698 @@
+<html>
+	<head>
+		<title>Robert Ong | Portfolio</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+		<style>
+			body {
+				font-family: Bahnschrift;
+			}
+			
+			#backgroundImage {
+				width: 100%;
+				height: 100%;
+				position: fixed;
+				top: 0px;
+				left: 0px;
+				z-index: -2;
+			}
+			
+			#blackLayer {
+				width: 100%;
+				height: 100%;
+				background-color: rgba(0, 0, 0, 0.5);
+				position: fixed;
+				top: 0px;
+				left: 0px;
+				z-index: -1;
+			}
+			
+			#headingTable {
+				background-color: rgba(0, 0, 0, 0.5);
+				color: white;
+				width: 100%;
+				position: fixed;
+				top: 0px;
+				left: 0px;
+			}
+			
+			.navigationButtonCells {
+				width: 10%;
+			}
+			
+			.navigationButton {
+				width: 100%;
+				height: 100%;
+				padding: 20px 0px;
+				font-family: inherit;
+				color: white;
+				background-color: inherit;
+				border: 0px;
+			}
+			
+			.navigationButton:hover {
+				background-color: rgba(255, 255, 255, 0.8);
+				color: rgba(32, 42, 68, 1);
+			}
+			
+			.navigationButton:active {
+				color: white;
+			}
+			
+			.contentTables {
+				width: 100%;
+				min-height: 100%;
+				padding: 0% 10%;
+				color: white;
+			}
+			
+			/* ---------- Home Page ---------- */
+			
+			#hiText {
+				font-size: 24pt;
+			}
+			
+			#nameText {
+				margin-top: 0px;
+				margin-bottom: 10px;
+				font-size: 60pt;
+			}
+			
+			.space {
+				height: 10%;
+			}
+			
+			/* ---------- Projects Page ---------- */
+			
+			.heading {
+				font-size: 36pt;
+			}
+			
+			#projectsTable {
+				width: 100%;
+				min-height: 350px;
+				color: inherit;
+				font-family: Bahnschrift Light;
+				border-spacing: 20px;
+			}
+			
+			#projectsListColumn {
+				width: 30%;
+				vertical-align: top;
+			}
+			
+			.projectsListButtons {
+				padding: 15px;
+				width: 100%;
+				background-color: rgba(0, 0, 0, 0);
+				color: white;
+				border: 0px;
+				font-family: inherit;
+			}
+			
+			.projectsListButtons:hover {
+				background-color: rgba(32, 42, 68, 0.8);
+			}
+			
+			.selectedProjectButton {
+				color: aqua;
+			}
+			
+			#projectsTablePartition {
+				height: 100%;
+				width: 1px;
+				background-color: white;
+			}
+			
+			#projectTitle {
+				margin: 0px;
+			}
+			
+			#projectsDetailsColumn li {
+				margin-bottom: 10px;
+			}
+			
+			#documentationButton {
+				background-color: rgba(0, 0, 0, 0);
+				color: inherit;
+				font-family: inherit;
+				border: 0px;
+			}
+			
+			#documentationButton:hover {
+				text-decoration: underline;
+			}
+			
+			#documentationTable {
+				height: 300px;
+				width: 100%;
+				text-align: center;
+				color: white;
+				border-spacing: 10px;
+			}
+			
+			#imageCell {
+				width: 90%;
+			}
+			
+			.changePictureButtons {
+				background-color: rgba(0, 0, 0, 0);
+				border: 0px;
+				font-family: inherit;
+				font-size: 50pt;
+				color: white;
+				width: 100%;
+			}
+			
+			.changePictureButtons:hover {
+				background-color: rgba(32, 42, 68, 1);
+			}
+			
+			#documentationImage {
+				max-height: 300px;
+				max-width: 100%;
+				background-color: white;
+			}
+			
+			/* ---------- About Me Page ---------- */
+			
+			
+			#aboutMeTable {
+				width: 100%;
+				color: inherit;
+				border-spacing: 2px;
+				position: relative;
+			}
+			
+			#aboutMeTable th {
+				font-family: inherit;
+				width: 33%;
+				height: 160px;
+				text-align: center;
+			}
+			
+			#aboutMeTable .heading {
+				margin: 0px;
+			}
+			
+			#aboutMeDivisionsCell {
+				height: 10px;
+			}
+			
+			#aboutMeTable td {
+				font-family: Bahnschrift Light;
+				height: 1px;
+			}
+			
+			.aboutMeDivisionButtons {
+				background-color: rgba(0, 0, 0, 0);
+				width: 100%;
+				height: 100%;
+				font-family: inherit;
+				font-size: inherit;
+				color: inherit;
+				border: 0px;
+			}
+			
+			.aboutMeDivisionButtons:hover {
+				color: aqua;
+			}
+			
+			.aboutMeDivisions {
+				background-color: rgba(0, 0, 0, 0);
+				position: absolute;
+			}
+			
+			.aboutMeDivisions div {
+				width: 100%;
+				height: 100%;
+				padding: 0px 15px;
+				font-size: 10pt;
+			}
+			
+			#educationDiv {
+				width: 33%;
+				height: 484px;
+				top: 0px;
+				left: 0px;
+			}
+			
+			#skillsDiv {
+				width: 100%;
+				height: 160px;
+				top: 0px;
+				left: 0px;
+			}
+			
+			#experienceDiv {
+				width: 33%;
+				height: 484px;
+				top: 0px;
+				left: 67%;
+			}
+			
+			#othersDiv {
+				width: 100%;
+				height: 160px;
+				top: 324px;
+				left: 0px;
+			}
+			
+			.subHeading {
+				font-family: Bahnschrift;
+				font-size: 15pt;
+				color: aqua;
+			}
+			
+			#skillsTable, #othersTable {
+				border-spacing: 5px;
+				width: 100%;
+				height: 100%;
+				padding: 15px;
+				color: inherit;
+				font-family: inherit;
+				font-size: 9pt;
+			}
+			
+			#skillsTable td, #othersTable td {
+				vertical-align: top;
+			}
+			
+			.personalInfoLinks {
+				color: inherit;
+			}
+		</style>
+	</head>
+	<body>
+		<img id="backgroundImage" src="static/background.jpg" />
+		<div id="blackLayer"></div>
+		<table id="headingTable">
+			<tr>
+				<th></th>
+				<th class="navigationButtonCells">
+					<a href="#home"><button class="navigationButton" id="homeButton">Home</button></a>
+				</th>
+				<th class="navigationButtonCells">
+					<a href="#projects"><button class="navigationButton" id="projectsButton">Projects</button></a>
+				</th>
+				<th class="navigationButtonCells">
+					<a href="#aboutMe"><button class="navigationButton" id="aboutMeButton">About Me</button></a>
+				</th>
+			</tr>
+		</table>
+		
+		<table class="contentTables" id="home">
+			<tr>
+				<td>
+					<span id="hiText">Hi, I am</span>
+					<h1 id="nameText">ROBERT ONG</h1>
+					I'm graduated with a Bachelor of Computer Science specializing in Big Data
+				</td>
+			</tr>
+		</table>
+		<div class="space"></div>
+		
+		<table class="contentTables" id="projects">
+			<tr>
+				<td>
+					<h1 class="heading">PROJECTS</h1>
+					<table id="projectsTable">
+						<tr>
+							<td id="projectsListColumn">
+								<button class="projectsListButtons">Face Animation - A Deep Learning Approach</button>
+								<button class="projectsListButtons">Prototype of Gift Shop Website</button>
+								<button class="projectsListButtons">Prototype of Room Booking System</button>
+							</td>
+							<td id="projectsTablePartition"></td>
+							<td id="projectsDetailsColumn">
+								<span id="projectPeriod"></span>
+								<h2 id="projectTitle"></h2>
+								<span id="projectAssociate"></span><br/>
+								<span id="projectGroupIndividual"></span>
+								<span id="projectDescriptions"></span>
+								<button id="documentationButton">SEE DOCUMENTATION &gt;</button>
+								<table id="documentationTable">
+									<tr>
+										<td>
+											<button class="changePictureButtons" id="previousPictureButton">&lt;</button>
+										</td>
+										<td id="imageCell">
+											<img id="documentationImage" /><br/>
+										</td>
+										<td>
+											<button class="changePictureButtons" id="nextPictureButton">&gt;</button>
+										</td>
+									</tr>
+									<tr>
+										<td colspan=3>
+											<span id="documentationName"></span>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<div class="space"></div>
+		
+		<table class="contentTables" id="aboutMe">
+			<tr>
+				<td>
+					<table id="aboutMeTable">
+						<tr>
+							<th></th>
+							<th><button class="aboutMeDivisionButtons" id="skillsButton"><b>Skills</b></button></th>
+							<th></th>
+						</tr>
+						<tr>
+							<th><button class="aboutMeDivisionButtons" id="educationButton"><b>Education</b></button></th>
+							<th>
+								<h1 class="heading">ABOUT ME</h1>
+							</th>
+							<th><button class="aboutMeDivisionButtons" id="experienceButton"><b>Experience</b></button></th>
+						</tr>
+						<tr>
+							<th></th>
+							<th><button class="aboutMeDivisionButtons" id="othersButton"><b>Others</b></button></th>
+							<th></th>
+						</tr>
+						<tr height="1%">
+							<td id="aboutMeDivisionsCell">
+								<div class="aboutMeDivisions" id="educationDiv">
+									<div>
+										<h2 class="subHeading">EDUCATION</h2>
+										<p>
+											<b>Bachelor of Computer Science (Big Data)</b><br/>
+											<i>
+												Jan 2020 - Jun 2022<br/>
+												SIM - University of Wollongong<br/>
+												Australia
+											</i>
+										</p>
+										<p>
+											<b>Diploma in Management Studies</b><br/>
+											<i>
+												Oct 2018 - Dec 2019<br/>
+												Singapore Institute of Management (SIM)<br/>
+												Singapore
+											</i>
+										</p>
+									</div>
+								</div>
+								<div class="aboutMeDivisions" id="skillsDiv">
+									<table id="skillsTable">
+										<tr>
+											<td>
+												<b class="subheading">PROGRAMMING LANGUAGES</b>
+											</td>
+											<td>
+												<b class="subheading">TOOLS</b>
+											</td>
+											<td>
+												<b class="subheading">OTHERS</b>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<ul>
+													<li>Java</li>
+													<li>C++</li>
+													<li>Python</li>
+													<li>R Language</li>
+													<li>SQL</li>
+													<li>Frontend Web Programming (HTML, CSS, JavaScript, jQuery)</li>
+												</ul>
+											</td>
+											<td>
+												<ul>
+													<li>Jupyter Notebook</li>
+													<li>Oracle Database</li>
+													<li>MySQL</li>
+													<li>Microsoft Project</li>
+													<li>Microsoft Office (Word, Excel, PowerPoint)</li>
+												</ul>
+											</td>
+											<td>
+												<ul>
+													<li>Data Mining</li>
+													<li>Oracle Database Performance Tuning</li>
+												</ul>
+											</td>
+										</tr>
+									</table>
+								</div>
+								<div class="aboutMeDivisions" id="experienceDiv">
+									<div>
+										<h2 class="subHeading">WORK</h2>
+										<p>
+											<b>Accounting Intern</b><br/>
+											<i>
+												May 2018 - Aug 2018<br/>
+												PT Pan Baruna<br/>
+												Indonesia
+											</i>
+										</p>
+										<h2 class="subHeading">VOLUNTEER</h2>
+										<p>
+											<b>SIM Student Ambassador</b><br/>
+											<i>
+												Oct 2020 - Jun 2022<br/>
+												Singapore Institute of Management (SIM)<br/>
+												Singapore
+											</i>
+										</p>
+									</div>
+								</div>
+								<div class="aboutMeDivisions" id="othersDiv">
+									<table id="othersTable">
+										<tr>
+											<td>
+												<b class="subHeading">AWARDS</b>
+											</td>
+											<td>
+												<b class="subHeading">CONTACT ME</b>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<ul>
+													<li>Google Kick Start 2022 - Participant (Google, Nov 2022)</li>
+													<li>UOW EIS Dean's Merit Award 2021 (University of Wollongong, Jul 2022)</li>
+													<li>Shopee Code League 2022 - Participant (Shopee, Apr 2022)</li>
+													<li>UOW EIS Dean's Merit Award 2020 (University of Wollongong, Jan 2022)</li>
+												</ul>
+											</td>
+											<td>
+												<b>Email</b><br/>robertong907@gmail.com<br/>
+												<br/>
+												<b>LinkedIn</b><br/><a class="personalInfoLinks" href="https://linkedin.com/in/robertongg/" target="_blank">https://linkedin.com/in/robertongg/</a><br/>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		
+		<script>
+			var projects = [
+				[
+					"Face Animation - A Deep Learning Approach",
+					"Jan 2022",
+					"May 2022",
+					"University of Wollongong - Final Year Project",
+					true,
+					"Chosen as a lead developer in a team of 5 to develop a face animation system and keep track of the development progress",
+					"Developed a system that is able to animate a given facial image of a person with respect to a specific facial feature using a deep learning approach",
+					"Python, SQL, FastAPI, Frontend Web Programming (HTML, CSS, JavaScript)",
+					[
+						"01. System Architecture.png",
+						"02. Login.png",
+						"03. Home page.png",
+						"04. Animator.png",
+						"05. Project Details.png",
+						"06. About Us.png"
+					]
+				], [
+					"Prototype of Gift Shop Website",
+					"Jan 2021",
+					"Feb 2021",
+					"University of Wollongong - Frontend Web Programming",
+					false,
+					null,
+					"Developed a prototype of a gift shop website with a brand using ASP.NET framework and database to store and manipulate products",
+					"Microsoft Visual Studio (ASP.NET Framework), SQL, Razor Code, Frontend Web Programming (HTML, CSS, JavaScript, jQuery)",
+					[
+						"01. System Design.png",
+						"02. Database UML.png",
+						"03. Login page.png",
+						"04. Home Page 1.png",
+						"05. Home Page 2.png",
+						"06. Home Page 2a.png",
+						"07. Home Page 3.png",
+						"08. Home Page 3a.png",
+						"09. Home Page 4.png",
+						"10. Home Page 4a.png",
+						"11. Footer.png",
+						"12. Product Page.png",
+						"13. Product Details Page.png",
+						"14. Shopping Cart Page.png",
+						"15. Cart Item Edit Page.png"
+					]
+				], [
+					"Prototype of Room Booking System",
+					"Apr 2020",
+					"May 2020",
+					"University of Wollongong - IT Project Management",
+					true,
+					"Recruited and led a team of 6 to develop a prototype of a room booking system and 25 types of reports",
+					"Developed a prototype of a room booking system for the University of Wollongong. This system must be able to use for staff users to create and manage rooms, super users to manage the room requested by the staff users and see booking history, and students to book the created rooms",
+					"Frontend Web Programming (HTML, CSS, JavaScript, PHP)",
+					[
+						"01. System Design.png",
+						"02. Login Page.png",
+						"03. Staff Home Page.png",
+						"04. Staff Page - Create Room.png",
+						"05. Staff Page - Edit Room.png",
+						"06. Super User Home Page.png",
+						"07. Super User - Manage Request.png",
+						"08. Super User - Room Details.png",
+						"09. Super User - Booking History.png",
+						"10. Student Home Page.png",
+						"11. Student Page - Book Room.png",
+						"12. Student Page - Book Checkout.png",
+						"13. Student Page - Booking Management.png"
+					]
+				]
+			];
+			var selectedProject = projects[0][0];
+			var selectedImage = 0;
+			var documentationList = projects[0][8];
+			var documentationHidden = true;
+			
+			$(document).ready(function() {
+				$("#documentationTable").hide();
+				$(".aboutMeDivisions").hide();
+				$("#projectPeriod").text(projects[0][1] + " - " + projects[0][2]);
+				$("#projectTitle").text(selectedProject);
+				$("#projectAssociate").text(projects[0][3]);
+				if (projects[0][4]) {
+					$("#projectGroupIndividual").html("<i>Group Project</i>");
+					$("#projectDescriptions").html(
+						"<ul>" +
+							"<li>" + projects[0][6] + "</li>" +
+							"<li>" + projects[0][5] + "</li>" +
+							"<li>Tools: " + projects[0][7] + "</li>" +
+						"</ul>"
+					);
+				} else {
+					$("#projectGroupIndividual").html("<i>Individual Project</i>");
+					$("#projectDescriptions").html(
+						"<ul>" +
+							"<li>" + projects[0][6] + "</li>" +
+							"<li>Tools: " + projects[0][7] + "</li>" +
+						"</ul>"
+					);
+				}
+				$("#documentationImage").attr("src", "./static/documentation/".concat(selectedProject, "/", documentationList[selectedImage]));
+				$("#documentationName").append(documentationList[selectedImage].slice(4, -4));
+				
+				$(".projectsListButtons").first().addClass("selectedProjectButton");
+				$(".projectsListButtons").click(function() {
+					if (!$(this).hasClass("selectedProjectButton")) {
+						$("#projectsDetailsColumn").hide();
+						$(".projectsListButtons").removeClass("selectedProjectButton");
+						$(this).addClass("selectedProjectButton");
+						
+						selectedProject = $(this).text();
+						for (var i = 0; i < projects.length; i++) {
+							if (projects[i][0] == selectedProject) {
+								$("#projectPeriod").text(projects[i][1] + " - " + projects[i][2]);
+								$("#projectTitle").text(selectedProject);
+								$("#projectAssociate").text(projects[i][3]);
+								
+								if (projects[i][4] == "1") {
+									$("#projectGroupIndividual").html("<i>Group Project</i>");
+									$("#projectDescriptions").html(
+										"<ul>" +
+											"<li>" + projects[i][6] + "</li>" +
+											"<li>" + projects[i][5] + "</li>" +
+											"<li>Tools: " + projects[i][7] + "</li>" +
+										"</ul>"
+									);
+								} else {
+									$("#projectGroupIndividual").html("<i>Individual Project</i>");
+									$("#projectDescriptions").html(
+										"<ul>" +
+											"<li>" + projects[i][6] + "</li>" +
+											"<li>Tools: " + projects[i][7] + "</li>" +
+										"</ul>"
+									);
+								}
+								
+								documentationList = projects[i][8];
+							}
+						}
+						
+						selectedImage = 0;
+						$("#documentationTable").hide();
+						documentationHidden = true;
+						$("#documentationButton").empty().append("SEE DOCUMENTATION >");
+						
+						$("#documentationImage").attr("src", "./static/documentation/".concat(selectedProject, "/", documentationList[selectedImage]));
+						$("#documentationName").empty().append(documentationList[selectedImage].slice(4, -4));
+						
+						$("#projectsDetailsColumn").fadeIn(500);
+					}
+				});
+				
+				$("#documentationButton").click(function() {
+					if (documentationHidden) {
+						$("#documentationTable").fadeToggle(500);
+						documentationHidden = false;
+						$("#documentationButton").empty().append("< HIDE DOCUMENTATION");
+					} else {
+						$("#documentationTable").fadeToggle(500);
+						documentationHidden = true;
+						$("#documentationButton").empty().append("SEE DOCUMENTATION >");
+					}
+				});
+				
+				$("#previousPictureButton").click(function() {
+					if (selectedImage == 0) {
+						selectedImage = documentationList.length - 1;
+					} else {
+						selectedImage--;
+					}
+					
+					$("#documentationImage").attr("src", "./static/documentation/".concat(selectedProject, "/", documentationList[selectedImage]));
+					$("#documentationName").empty().append(documentationList[selectedImage].slice(4, -4));
+				});
+				
+				$("#nextPictureButton").click(function() {
+					if (selectedImage == documentationList.length - 1) {
+						selectedImage = 0;
+					} else {
+						selectedImage++;
+					}
+					
+					$("#documentationImage").attr("src", "./static/documentation/".concat(selectedProject, "/", documentationList[selectedImage]));
+					$("#documentationName").empty().append(documentationList[selectedImage].slice(4, -4));
+				});
+				
+				$(".aboutMeDivisionButtons").click(function() {
+					$(".aboutMeDivisions").fadeOut(500);
+					$(".aboutMeDivisionButtons").fadeIn(500);
+					$(this).hide(500);
+					
+					let divName = $(this).attr("id").slice(0, -6)
+					$("#".concat(divName, "Div")).fadeIn(500);
+				});
+			});
+		</script>
+	</body>
+</html>
