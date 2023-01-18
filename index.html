@@ -143,7 +143,11 @@
 			}
 			
 			#documentationTable {
-				height: 300px;
+				background-color: rgba(0, 0, 0, 0.5);
+				position: fixed;
+				top: 0;
+				left: 0;
+				height: 100%;
 				width: 100%;
 				text-align: center;
 				color: white;
@@ -152,6 +156,17 @@
 			
 			#imageCell {
 				width: 90%;
+			}
+			
+			#closeDocumentationButton {
+				background-color: rgba(0, 0, 0, 0);
+				border: 0px;
+				color: white;
+				padding: 10px;
+			}
+			
+			#closeDocumentationButton:hover {
+				background-color: maroon;
 			}
 			
 			.changePictureButtons {
@@ -168,7 +183,7 @@
 			}
 			
 			#documentationImage {
-				max-height: 300px;
+				max-height: 500px;
 				max-width: 100%;
 				background-color: white;
 			}
@@ -331,6 +346,11 @@
 								<span id="projectDescriptions"></span>
 								<button id="documentationButton">SEE DOCUMENTATION &gt;</button>
 								<table id="documentationTable">
+									<tr>
+										<td colspan=3 align="right">
+											<button id="closeDocumentationButton"><b>X</b></button>
+										</td>
+									</tr>
 									<tr>
 										<td>
 											<button class="changePictureButtons" id="previousPictureButton">&lt;</button>
@@ -529,7 +549,7 @@
 					[
 						"01. System Design.png",
 						"02. Database UML.png",
-						"03. Login Page.png",
+						"03. Login page.png",
 						"04. Home Page 1.png",
 						"05. Home Page 2.png",
 						"06. Home Page 2a.png",
@@ -572,7 +592,6 @@
 			var selectedProject = projects[0][0];
 			var selectedImage = 0;
 			var documentationList = projects[0][8];
-			var documentationHidden = true;
 			
 			$(document).ready(function() {
 				$("#documentationTable").hide();
@@ -640,7 +659,6 @@
 						
 						selectedImage = 0;
 						$("#documentationTable").hide();
-						documentationHidden = true;
 						$("#documentationButton").empty().append("SEE DOCUMENTATION >");
 						
 						$("#documentationImage").attr("src", "./static/documentation/".concat(selectedProject, "/", documentationList[selectedImage]));
@@ -651,15 +669,11 @@
 				});
 				
 				$("#documentationButton").click(function() {
-					if (documentationHidden) {
-						$("#documentationTable").fadeToggle(500);
-						documentationHidden = false;
-						$("#documentationButton").empty().append("< HIDE DOCUMENTATION");
-					} else {
-						$("#documentationTable").fadeToggle(500);
-						documentationHidden = true;
-						$("#documentationButton").empty().append("SEE DOCUMENTATION >");
-					}
+					$("#documentationTable").fadeToggle(500);
+				});
+				
+				$("#closeDocumentationButton").click(function() {
+					$("#documentationTable").fadeToggle(500);
 				});
 				
 				$("#previousPictureButton").click(function() {
