@@ -1,16 +1,42 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.f855e6bc.css",
-    "main.js": "/portfolio/static/js/main.9beaec5a.js",
+    "main.js": "/portfolio/static/js/main.be4ce1b3.js",
     "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
+    "static/media/background.jpg": "/portfolio/static/media/background.fa0ac9e93e5928980dc8.jpg",
+    "static/media/PAD.png": "/portfolio/static/media/PAD.eef564ea9a5bd1f1c3c3.png",
+    "static/media/Scrum.png": "/portfolio/static/media/Scrum.d480c6dc887337fafd4f.png",
+    "static/media/PowerPoint.png": "/portfolio/static/media/PowerPoint.c3058e62cbd60445f648.png",
+    "static/media/SQL.png": "/portfolio/static/media/SQL.1e91db7eb83f54998b08.png",
+    "static/media/Word.png": "/portfolio/static/media/Word.c05a52ec4bb11887bb5e.png",
+    "static/media/Excel.png": "/portfolio/static/media/Excel.18b95c2229b627e38e05.png",
+    "static/media/R.png": "/portfolio/static/media/R.923cd69b60e224531d3d.png",
+    "static/media/UOW.png": "/portfolio/static/media/UOW.3edd06381df11a02c192.png",
+    "static/media/HTML.png": "/portfolio/static/media/HTML.f08f7501a638838b0664.png",
+    "static/media/Java.png": "/portfolio/static/media/Java.679348d01a2c6c83c2d0.png",
+    "static/media/NCS.png": "/portfolio/static/media/NCS.55ecd54c64f342170d8c.png",
+    "static/media/CPP.png": "/portfolio/static/media/CPP.053a898d752aef72651e.png",
+    "static/media/Google.png": "/portfolio/static/media/Google.1630b00bba3756f43a37.png",
+    "static/media/Shopee.png": "/portfolio/static/media/Shopee.9ea7ed338d6126d8e568.png",
+    "static/media/MS Project.png": "/portfolio/static/media/MS Project.ec1ae67950de9b47c63a.png",
+    "static/media/SIM.png": "/portfolio/static/media/SIM.5b8c93e3f928049fde64.png",
+    "static/media/NUS-ISS.png": "/portfolio/static/media/NUS-ISS.a77733aa89bf35005073.png",
+    "static/media/jQuery.png": "/portfolio/static/media/jQuery.3cce901947a2c0e182b4.png",
+    "static/media/CSS.png": "/portfolio/static/media/CSS.02d225c7df0b28341d8d.png",
+    "static/media/JavaScript.png": "/portfolio/static/media/JavaScript.2840e272f3582fbab1c1.png",
+    "static/media/Coursera.png": "/portfolio/static/media/Coursera.92ae84c4bce596f2edf4.png",
+    "static/media/MySQL.png": "/portfolio/static/media/MySQL.a04abbf76b39676bc4d9.png",
+    "static/media/React.png": "/portfolio/static/media/React.4e340519e2849d2f8335.png",
+    "static/media/Jupyter Notebook.png": "/portfolio/static/media/Jupyter Notebook.7f2131e478d8307b7f91.png",
+    "static/media/Python.webp": "/portfolio/static/media/Python.0a4da4c7d2c1aa08c817.webp",
     "static/media/logo.svg": "/portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/portfolio/index.html",
     "main.f855e6bc.css.map": "/portfolio/static/css/main.f855e6bc.css.map",
-    "main.9beaec5a.js.map": "/portfolio/static/js/main.9beaec5a.js.map",
+    "main.be4ce1b3.js.map": "/portfolio/static/js/main.be4ce1b3.js.map",
     "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.9beaec5a.js"
+    "static/js/main.be4ce1b3.js"
   ]
 }
