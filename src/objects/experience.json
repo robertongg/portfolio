@@ -1,0 +1,79 @@
+{
+    "$schema": [
+        {
+            "type": "WORK",
+            "company": "NCS Pte Ltd",
+            "location": "Singapore",
+            "logo": "NCS",
+            "position": "Software Engineer",
+            "from": "Mar 2023",
+            "to": null,
+            "description": [
+                "Collaborate with project team members to develop software solutions based on user requirements",
+                "Identify and solve issues from the developed solutions by using various testing to ensure the software solutions work correctly",
+                "Work with clients to solve issues encountered during testing"
+            ],
+            "projects": ["Singtel RPA Migration", "NYP Migration Website"],
+            "topPosition": 0,
+            "stickyHeight": 975
+        }, {
+            "type": "STUDY",
+            "school": "NUS-ISS",
+            "location": "Singapore",
+            "logo": "NUS-ISS",
+            "title": "Graduate Certificate in Designing Modern Software Systems",
+            "from": "Apr 2023",
+            "to": "Nov 2023",
+            "description": [
+                "Courses include Essential Practices for Agile Teams, Software Analysis & Design, Software Design Patterns, and DevSecOps Engineering and Automation"
+            ],
+            "projects": [],
+            "topPosition": 320,
+            "stickyHeight": 335
+        }, {
+            "type": "STUDY",
+            "school": "SIM - University of Wollongong (UOW)",
+            "location": "Singapore",
+            "logo": "UOW",
+            "title": "Bachelor of Computer Science (Big Data)",
+            "from": "Jan 2020",
+            "to": "Jun 2022",
+            "description": [
+                "WAM: 86.30 / 100.00"
+            ],
+            "projects": ["Face Animation: A Deep Learning Approach", "Gift Shop website", "Room Booking System"],
+            "topPosition": 1280,
+            "stickyHeight": 335
+        }, {
+            "type": "STUDY",
+            "school": "Singapore Institute of Management (SIM)",
+            "location": "Singapore",
+            "logo": "SIM",
+            "title": "Diploma in Management Studies",
+            "from": "Oct 2018",
+            "to": "Dec 2019",
+            "description": [
+                "GPA: 3.90 / 4.00"
+            ],
+            "projects": [],
+            "topPosition": 1600,
+            "stickyHeight": 335
+        }, {
+            "type": "WORK",
+            "company": "PT Pan Baruna",
+            "location": "Indonesia",
+            "logo": "PB",
+            "position": "Accounting Intern",
+            "from": "May 2018",
+            "to": "Sep 2018",
+            "description": [
+                "Meticuluosly ensured accuracy and organized all transactions with suppliers and retailers to minimize errors",
+                "Thoroughly examined and audited monthly records on transactions in the system and bank statements to ensure accuracy and free from discrepancy",
+                "Handled, organized, and in-charged of overall administrative tasks for colleagues such as documentation and photo-copying"
+            ],
+            "projects": [],
+            "topPosition": 2240,
+            "stickyHeight": 335
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "$schema": [
+        {
+            "header": "AGE",
+            "text": "I am turning {0} this year"
+        }, {
+            "header": "NATIONALITY",
+            "text": "I am from Indonesia"
+        }, {
+            "header": "OCCUPATION",
+            "text": "I am working as Software Engineer"
+        }, {
+            "header": "LANGUAGE",
+            "text": "I can speak 3 languages\n(English, Chinese, Bahasa Indonesia)"
+        }
+    ]
+}

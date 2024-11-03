@@ -1,0 +1,72 @@
+{
+    "$schema": [
+        {
+            "category": "Programming Language",
+            "items": [
+                {
+                    "title": "Java",
+                    "logo": "Java"
+                }, {
+                    "title": "Python",
+                    "logo": "Python"
+                }, {
+                    "title": "C++",
+                    "logo": "CPP"
+                }, {
+                    "title": "R",
+                    "logo": "R"
+                }, {
+                    "title": "SQL",
+                    "logo": "SQL"
+                }, {
+                    "title": "HTML",
+                    "logo": "HTML"
+                }, {
+                    "title": "CSS",
+                    "logo": "CSS"
+                }, {
+                    "title": "JavaScript",
+                    "logo": "JavaScript"
+                }, {
+                    "title": "jQuery",
+                    "logo": "jQuery"
+                }, {
+                    "title": "TypeScript - React",
+                    "logo": "React"
+                }
+            ]
+        }, {
+            "category": "Tools",
+            "items": [
+                {
+                    "title": "MySQL",
+                    "logo": "MySQL"
+                }, {
+                    "title": "Oracle Database",
+                    "logo": "Oracle DB"
+                }, {
+                    "title": "Jupyter Notebook",
+                    "logo": "Jupyter Notebook"
+                }, {
+                    "title": "Adobe Experience Manager (AEM)",
+                    "logo": "AEM"
+                }, {
+                    "title": "Microsoft Power Automate",
+                    "logo": "PAD"
+                }, {
+                    "title": "Microsoft Project",
+                    "logo": "MS Project"
+                }, {
+                    "title": "Microsoft Word",
+                    "logo": "Word"
+                }, {
+                    "title": "Microsoft Excel",
+                    "logo": "Excel"
+                }, {
+                    "title": "Microsoft PowerPoint",
+                    "logo": "PowerPoint"
+                }
+            ]
+        }
+    ]
+}

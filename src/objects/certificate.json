@@ -1,0 +1,17 @@
+{
+    "$schema": [
+        {
+            "title": "Professional Scrum Developer I (PSD I)",
+            "associate": "Scrum.org",
+            "logo": "Scrum",
+            "date": "Apr 2023",
+            "description": null
+        }, {
+            "title": "Data Analysis with R Programming",
+            "associate": "Coursera",
+            "logo": "Coursera",
+            "date": "Sep 2021",
+            "description": null
+        }
+    ]
+}
