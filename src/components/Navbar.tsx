@@ -1,17 +1,16 @@
-import { Box, Flex, Text } from "@chakra-ui/react";
+import { Box, Flex, Text, Link } from "@chakra-ui/react";
 import CustomImage from "./CustomImage";
-import { Link } from "react-router-dom";
 
 const navItems = [
     {
-        title: "Home",
-        href: "/portfolio"
+        title: "Study and Career",
+        href: "#studyAndCareer"
     }, {
-        title: "Projects",
-        href: "/portfolio/projects"
+        title: "Achievements",
+        href: "#achievements"
     }, {
-        title: "About Me",
-        href: "/portfolio/about"
+        title: "Skills",
+        href: "#skills"
     }
 ]
 
@@ -32,7 +31,7 @@ const Navbar = () => {
                         //     );
                         // } else {
                             return (
-                                <Link to={navItem.href}>
+                                <Link href={navItem.href}>
                                     <Text color="whiteAlpha.900" _hover={{textDecoration: "underline"}}>
                                         {navItem.title}
                                     </Text>
