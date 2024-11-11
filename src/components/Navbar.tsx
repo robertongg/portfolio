@@ -1,16 +1,17 @@
-import { Box, Flex, Text, Link } from "@chakra-ui/react";
+import { Box, Flex, Text } from "@chakra-ui/react";
 import CustomImage from "./CustomImage";
+import { Link } from "react-scroll";
 
 const navItems = [
     {
         title: "Study and Career",
-        href: "#studyAndCareer"
+        href: "studyAndCareer"
     }, {
         title: "Achievements",
-        href: "#achievements"
+        href: "achievements"
     }, {
         title: "Skills",
-        href: "#skills"
+        href: "skills"
     }
 ]
 
@@ -31,7 +32,7 @@ const Navbar = () => {
                         //     );
                         // } else {
                             return (
-                                <Link href={navItem.href}>
+                                <Link to={navItem.href} smooth={true} spy={true} duration={500}>
                                     <Text color="whiteAlpha.900" _hover={{textDecoration: "underline"}}>
                                         {navItem.title}
                                     </Text>
