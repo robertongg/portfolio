@@ -7,8 +7,8 @@
             "header": "NATIONALITY",
             "text": "I am from Indonesia"
         }, {
-            "header": "OCCUPATION",
-            "text": "I am working as Software Engineer"
+            "header": "EXPERIENCE",
+            "text": "I have been working for {0}"
         }, {
             "header": "LANGUAGE",
             "text": "I can speak 3 languages\n(English, Chinese, Bahasa Indonesia)"

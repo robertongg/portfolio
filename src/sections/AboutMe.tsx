@@ -1,5 +1,4 @@
-import { Box, Card, CardBody, Flex, Heading, Icon, ScaleFade, Text } from "@chakra-ui/react";
-import { useState } from "react";
+import { Box, Flex, Heading, Icon, Text } from "@chakra-ui/react";
 import { IconType } from "react-icons";
 import { BsGlobeAsiaAustralia, BsBriefcase } from "react-icons/bs";
 import { IoLanguage } from "react-icons/io5";
@@ -8,62 +7,39 @@ import { LiaBirthdayCakeSolid } from "react-icons/lia";
 import CustomHeading from "../components/CustomHeading";
 import { IAboutMe } from "../objects/ObjectsInterface";
 
-interface AboutMeCardProp {
+interface AboutMeItemProp {
     icon: IconType | null,
     header: string,
     text: string
 }
 
-const AboutMeCard = (property: AboutMeCardProp) => {
-    const [cardFlip, setCardFlip] = useState(false);
-    const initialScaleAnimation = 0.7;
-
+const AboutMeItem = (property: AboutMeItemProp) => {
     return (
-        <Card
-            variant={cardFlip ? "filled": "elevated"}
-            onClick={() => {setCardFlip(!cardFlip)}}
-            h={{base: "125px", md: "200px"}}
-            textAlign="center"
-            w={{base: "full", md: "calc((100% - 1rem) / 2)", xl: "calc((100% - 3rem) / 4)"}}
-            cursor="pointer"
-        >
-            <CardBody display="flex" alignItems="center" justifyContent="center">
-                <ScaleFade
-                    initialScale={initialScaleAnimation}
-                    in={!cardFlip}
-                    style={{display: !cardFlip ? "block" : "none"}}
-                >
-                    <Box>
-                        {property.icon ?
-                            <Heading color="#438ea6" size="lg">
-                                <Icon as={property.icon}/>
-                            </Heading>
-                        : null}
-                        <Heading color="#438ea6" size="md">
-                            {property.header}
-                        </Heading>
-                    </Box>
-                </ScaleFade>
-                {property.icon ?
-                    <ScaleFade
-                        initialScale={initialScaleAnimation}
-                        in={cardFlip}
-                        style={{display: cardFlip ? "block" : "none", position: "absolute", zIndex: 1}}
-                    >
-                        <Heading color="blackAlpha.100" size="4xl">
-                            <Icon as={property.icon}/>
-                        </Heading>
-                    </ScaleFade>
-                : null}
-                <ScaleFade
-                    initialScale={initialScaleAnimation}
-                    in={cardFlip}
-                    style={{display: cardFlip ? "block" : "none", position: "relative", zIndex: 2}}
-                >
-                    <Text fontSize="md" whiteSpace="pre-wrap">{property.text}</Text>
-                </ScaleFade>
-            </CardBody>
-        </Card>
+        <Flex position="relative" alignItems="center" minW={360}>
+            {!property.icon ? null :
+                <Icon
+                    as={property.icon}
+                    color="#438ea6"
+                    opacity="0.3"
+                    fontSize="9xl"
+                    position="relative"
+                    zIndex={-1}
+                />
+            }
+            <Heading
+                color="#438ea6"
+                position="absolute"
+                left={36}
+                mt={-8}
+            >
+                {property.header}
+            </Heading>
+            <Box position="relative" mt={8} w="calc(100% - 8rem)">
+                <Text position="absolute" left={{base: 12, sm: 16}}>
+                    {property.text}
+                </Text>
+            </Box>
+        </Flex>
     );
 }
 
@@ -73,23 +49,46 @@ const AboutMe = () => {
     return (
         <>
             <CustomHeading text="About Me" isCenter></CustomHeading>
-            <Flex gap={{base: 2, sm: 4}} flexWrap="wrap" w="full">
+            <Flex columnGap={24} rowGap={12} flexWrap="wrap" w="full" justifyContent="center" maxW={1000} m="auto">
                 {aboutMeData.map((data) => {
                     var icon = null;
                     var text = data.text;
 
                     switch(data.header) {
+                        case "NATIONALITY": icon = BsGlobeAsiaAustralia; break;
+                        case "LANGUAGE": icon = IoLanguage; break;
                         case "AGE":
                             icon = LiaBirthdayCakeSolid;
                             text = text.replace("{0}", ((new Date()).getFullYear() - 2000).toString())
                             break;
-                        case "NATIONALITY": icon = BsGlobeAsiaAustralia; break;
-                        case "OCCUPATION": icon = BsBriefcase; break;
-                        case "LANGUAGE": icon = IoLanguage; break;
+                        case "EXPERIENCE":
+                            var startDate = new Date(2023, 2);
+                            console.log(startDate);
+                            var currentDate = new Date();
+                            var experience = "";
+
+                            var difference = (currentDate.getFullYear() - startDate.getFullYear()) * 12;
+                            difference += currentDate.getMonth() - startDate.getMonth();
+
+                            if (difference < 12) {
+                                experience = `${difference.toString()} month` + (difference > 1 ? "s" : "");
+                            } else {
+                                var yearDifference = Math.floor(difference / 12);
+                                experience = `${yearDifference.toString()} year` + (yearDifference > 1 ? "s" : "");
+
+                                if (difference % 12 !== 0) {
+                                    var monthDifference = difference % 12;
+                                    experience += ` and ${monthDifference.toString()} month` + (monthDifference > 1 ? "s" : "");
+                                }
+                            }
+
+                            icon = BsBriefcase;
+                            text = text.replace("{0}", experience);
+                            break;
                     }
 
                     return (
-                        <AboutMeCard icon={icon} header={data.header} text={text}></AboutMeCard>
+                        <AboutMeItem icon={icon} header={data.header} text={text}></AboutMeItem>
                     )
                 })}
             </Flex>
