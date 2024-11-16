@@ -20,13 +20,12 @@ const navItems = [
 ]
 
 const Navbar = () => {
-    const backgroundImage = CustomImage("background");
     const [navbarOpacity, setNavbarOpacity] = useState(0);
     const [toTopOpacity, setToTopOpacity] = useState(0);
     const { isOpen, onOpen, onClose } = useDisclosure();
 
     window.addEventListener("scroll", () => {
-        if (window.scrollY >= (window.innerHeight - 56)) {
+        if (window.scrollY >= 100) {
             setNavbarOpacity(1);
         } else {
             setNavbarOpacity(0);
@@ -48,12 +47,11 @@ const Navbar = () => {
                 top="0"
                 zIndex={99}
                 w="full"
-                bgImage={backgroundImage}
                 bgPosition="center"
                 bgSize="cover"
             >
                 {/* Desktop view */}
-                <Flex display={{base: "none", md: "flex"}} bg="rgba(0, 0, 0, 0.4)" gap={{base:10, sm:20}} pt={4} pb={4} justifyContent={"center"}>
+                <Flex display={{base: "none", md: "flex"}} bg="rgba(0, 0, 0, 0.8)" gap={{base:10, sm:20}} pt={4} pb={4} justifyContent={"center"}>
                     {navItems.map((navItem) => {
                         return (
                             <Link to={navItem.href} smooth={true} spy={true} duration={750}>
@@ -81,7 +79,7 @@ const Navbar = () => {
                     <DrawerBody display="flex" gap={4} flexDirection="column">
                         {navItems.map((navItem) => {
                             return (
-                                <Link to={navItem.href} smooth={true} spy={true} duration={750}>
+                                <Link to={navItem.href} smooth={true} spy={true} duration={750} onClick={onClose}>
                                     <Text>
                                         {navItem.title}
                                     </Text>
