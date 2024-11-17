@@ -9,6 +9,7 @@ import Skills from "../sections/Skills";
 const Home = () => {
     return (
         <>
+            <CustomAnchor id="aboutMe" />
             <AboutMe/>
 
             <CustomAnchor id="studyAndCareer" />

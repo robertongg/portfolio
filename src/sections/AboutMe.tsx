@@ -15,7 +15,7 @@ interface AboutMeItemProp {
 
 const AboutMeItem = (property: AboutMeItemProp) => {
     return (
-        <Flex position="relative" alignItems="center" minW={360}>
+        <Flex position="relative" alignItems="center" w="full" maxW={360}>
             {!property.icon ? null :
                 <Icon
                     as={property.icon}
@@ -30,11 +30,12 @@ const AboutMeItem = (property: AboutMeItemProp) => {
                 color="#438ea6"
                 position="absolute"
                 left={36}
-                mt={-8}
+                mt={-16}
+                size={{base: "lg", md: "xl"}}
             >
                 {property.header}
             </Heading>
-            <Box position="relative" mt={8} w="calc(100% - 8rem)">
+            <Box position="relative" w="calc(100% - 8rem)">
                 <Text position="absolute" left={{base: 12, sm: 16}}>
                     {property.text}
                 </Text>

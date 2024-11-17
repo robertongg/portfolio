@@ -2,7 +2,7 @@
     "$schema": [
         {
             "header": "AGE",
-            "text": "I am turning {0} this year"
+            "text": "I am {0} this year"
         }, {
             "header": "NATIONALITY",
             "text": "I am from Indonesia"

@@ -4,10 +4,11 @@ import { useState } from "react";
 import { IoMenu } from "react-icons/io5";
 import { MdOutlineKeyboardArrowUp } from "react-icons/md";
 
-import CustomImage from "../components/CustomImage";
-
 const navItems = [
     {
+        title: "About Me",
+        href: "aboutMe"
+    }, {
         title: "Study and Career",
         href: "studyAndCareer"
     }, {
@@ -105,7 +106,7 @@ const Navbar = () => {
                     <Icon as={MdOutlineKeyboardArrowUp} />
                 </Button>
             </Link>
-            <Box h={14}></Box>
+            {/* <Box h={14}></Box> */}
         </>
     );
 }
