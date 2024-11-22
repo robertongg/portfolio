@@ -1,8 +1,10 @@
-import { Box, Button, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerHeader, DrawerOverlay, Flex, Heading, Icon, Text, useDisclosure } from "@chakra-ui/react";
-import { Link } from "react-scroll";
+import { Box, Button, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerFooter, DrawerHeader, DrawerOverlay, Flex, Heading, Icon, Text, useDisclosure } from "@chakra-ui/react";
+import { Link as AnchorLink } from "react-scroll";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import { IoMenu } from "react-icons/io5";
 import { MdOutlineKeyboardArrowUp } from "react-icons/md";
+import { FaClipboardList } from "react-icons/fa";
 
 const navItems = [
     {
@@ -42,8 +44,6 @@ const Navbar = () => {
     return (
         <>
             <Box
-                opacity={navbarOpacity}
-                transition="opacity 0.3s ease-in-out"
                 position="fixed"
                 top="0"
                 zIndex={99}
@@ -52,16 +52,24 @@ const Navbar = () => {
                 bgSize="cover"
             >
                 {/* Desktop view */}
-                <Flex display={{base: "none", md: "flex"}} bg="rgba(0, 0, 0, 0.8)" gap={{base:10, sm:20}} pt={4} pb={4} justifyContent={"center"}>
+                <Flex display={{base: "none", md: "flex"}} bg="rgba(0, 0, 0, 0.8)" gap={{base:10, sm:12, lg: 20}} pt={4} pb={4} justifyContent={"center"} alignItems="center">
                     {navItems.map((navItem) => {
                         return (
-                            <Link to={navItem.href} smooth={true} spy={true} duration={750}>
+                            <AnchorLink to={navItem.href} smooth={true} spy={true} duration={750}>
                                 <Text color="whiteAlpha.900" _hover={{textDecoration: "underline"}} cursor="pointer">
                                     {navItem.title}
                                 </Text>
-                            </Link>
+                            </AnchorLink>
                         );
                     })}
+                    <Box position="absolute" right={6}>
+                        <Link to="projects">
+                            <Button colorScheme="teal">
+                                Projects
+                                <Icon ml={1} as={FaClipboardList} />
+                            </Button>
+                        </Link>
+                    </Box>
                 </Flex>
 
                 {/* Mobile view */}
@@ -69,7 +77,7 @@ const Navbar = () => {
                     <Button variant="unstyled" position="absolute" left={0} w={12} h={12} onClick={onOpen}>
                         <Icon as={IoMenu} />
                     </Button>
-                    <Heading fontSize="md" fontWeight="semibold">Robert's Portfolio</Heading>
+                    <Heading fontSize="md" fontWeight="semibold" opacity={navbarOpacity} transition="opacity 0.3s ease-in-out">Robert's Portfolio</Heading>
                 </Flex>
             </Box>
             <Drawer isOpen={isOpen} onClose={onClose} placement="left">
@@ -80,17 +88,25 @@ const Navbar = () => {
                     <DrawerBody display="flex" gap={4} flexDirection="column">
                         {navItems.map((navItem) => {
                             return (
-                                <Link to={navItem.href} smooth={true} spy={true} duration={750} onClick={onClose}>
+                                <AnchorLink to={navItem.href} smooth={true} spy={true} duration={750} onClick={onClose}>
                                     <Text>
                                         {navItem.title}
                                     </Text>
-                                </Link>
+                                </AnchorLink>
                             );
                         })}
                     </DrawerBody>
+                    <DrawerFooter justifyContent="flex-start">
+                        <Link to="projects">
+                            <Button colorScheme="teal">
+                                Projects
+                                <Icon ml={1} as={FaClipboardList} />
+                            </Button>
+                        </Link>
+                    </DrawerFooter>
                 </DrawerContent>
             </Drawer>
-            <Link to="top" smooth={true} duration={750}>
+            <AnchorLink to="top" smooth={true} duration={750}>
                 <Button
                     opacity={toTopOpacity}
                     transition="opacity 0.3s ease-in-out"
@@ -105,8 +121,7 @@ const Navbar = () => {
                 >
                     <Icon as={MdOutlineKeyboardArrowUp} />
                 </Button>
-            </Link>
-            {/* <Box h={14}></Box> */}
+            </AnchorLink>
         </>
     );
 }

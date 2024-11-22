@@ -4,8 +4,8 @@ import { BsGlobeAsiaAustralia, BsBriefcase } from "react-icons/bs";
 import { IoLanguage } from "react-icons/io5";
 import { LiaBirthdayCakeSolid } from "react-icons/lia";
 
-import CustomHeading from "../components/CustomHeading";
-import { IAboutMe } from "../objects/ObjectsInterface";
+import CustomHeading from "../../components/CustomHeading";
+import { IAboutMe } from "../../objects/ObjectsInterface";
 
 interface AboutMeItemProp {
     icon: IconType | null,
@@ -45,7 +45,7 @@ const AboutMeItem = (property: AboutMeItemProp) => {
 }
 
 const AboutMe = () => {
-    const aboutMeData: IAboutMe[] = require("../objects/aboutMe.json").$schema;
+    const aboutMeData: IAboutMe[] = require("../../objects/aboutMe.json").$schema;
 
     return (
         <>
@@ -64,7 +64,6 @@ const AboutMe = () => {
                             break;
                         case "EXPERIENCE":
                             var startDate = new Date(2023, 2);
-                            console.log(startDate);
                             var currentDate = new Date();
                             var experience = "";
 

@@ -2,9 +2,9 @@ import { useDisclosure, Box, Button, Card, CardHeader, CardFooter, Flex, Heading
 import { BsBriefcaseFill } from "react-icons/bs";
 import { FaGraduationCap } from "react-icons/fa";
 
-import CustomHeading from "../components/CustomHeading";
-import CustomImage from "../components/CustomImage";
-import { IExperience } from "../objects/ObjectsInterface";
+import CustomHeading from "../../components/CustomHeading";
+import CustomImage from "../../components/CustomImage";
+import { IExperience } from "../../objects/ObjectsInterface";
 
 const StudyAndCareerCard = (property: IExperience, isRight: boolean, topPosition: number, stickyHeight: number, fullWidth: boolean) => {
     const { isOpen, onClose, onToggle } = useDisclosure();
@@ -160,7 +160,7 @@ const StudyAndCareerCard = (property: IExperience, isRight: boolean, topPosition
 }
 
 const StudyAndCareer = () => {
-    const workData: IExperience[] = require("../objects/experience.json").$schema;
+    const workData: IExperience[] = require("../../objects/experience.json").$schema;
     const timeline: string[] = ["Present", "Nov 2023", "Apr 2023", "Mar 2023", "June 2022", "Jan 2020", "Oct 2018", "Aug 2018", "May 2018"]
 
     return (

@@ -1,9 +1,9 @@
 import { Flex, Image, Tooltip } from "@chakra-ui/react";
 import { useState } from "react";
 
-import CustomHeading from "../components/CustomHeading";
-import CustomImage from "../components/CustomImage";
-import { ISkillItems, ISkills } from "../objects/ObjectsInterface";
+import CustomHeading from "../../components/CustomHeading";
+import CustomImage from "../../components/CustomImage";
+import { ISkillItems, ISkills } from "../../objects/ObjectsInterface";
 
 const SkillItem = (property: ISkillItems) => {
     const [isOpen, setOpen] = useState(false);
@@ -39,7 +39,7 @@ const SkillCategory = (property: ISkills) => {
 }
 
 const Skills = () => {
-    const skillsData: ISkills[] = require("../objects/skills.json").$schema;
+    const skillsData: ISkills[] = require("../../objects/skills.json").$schema;
 
     return (
         <>

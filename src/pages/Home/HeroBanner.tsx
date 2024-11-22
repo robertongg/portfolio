@@ -1,5 +1,5 @@
 import { Box, Flex, Heading } from "@chakra-ui/react"
-import CustomImage from "../components/CustomImage";
+import CustomImage from "../../components/CustomImage";
 
 const HeroBanner = () => {
     const backgroundImage = CustomImage("background");
