@@ -4,25 +4,25 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { IoMenu } from "react-icons/io5";
 import { MdOutlineKeyboardArrowUp } from "react-icons/md";
-import { FaClipboardList } from "react-icons/fa";
+import { IconType } from "react-icons";
 
-const navItems = [
-    {
-        title: "About Me",
-        href: "aboutMe"
-    }, {
-        title: "Study and Career",
-        href: "studyAndCareer"
-    }, {
-        title: "Achievements",
-        href: "achievements"
-    }, {
-        title: "Skills",
-        href: "skills"
-    }
-]
+interface NavbarItemProp {
+    title: string,
+    href: string
+}
 
-const Navbar = () => {
+interface ButtonProp {
+    label: string,
+    href: string,
+    icon: IconType
+}
+
+interface NavbarProp {
+    navbarItems: NavbarItemProp[],
+    button: ButtonProp
+}
+
+const Navbar = (property: NavbarProp) => {
     const [navbarOpacity, setNavbarOpacity] = useState(0);
     const [toTopOpacity, setToTopOpacity] = useState(0);
     const { isOpen, onOpen, onClose } = useDisclosure();
@@ -53,7 +53,7 @@ const Navbar = () => {
             >
                 {/* Desktop view */}
                 <Flex display={{base: "none", md: "flex"}} bg="rgba(0, 0, 0, 0.8)" gap={{base:10, sm:12, lg: 20}} pt={4} pb={4} justifyContent={"center"} alignItems="center">
-                    {navItems.map((navItem) => {
+                    {property.navbarItems.map((navItem) => {
                         return (
                             <AnchorLink to={navItem.href} smooth={true} spy={true} duration={750}>
                                 <Text color="whiteAlpha.900" _hover={{textDecoration: "underline"}} cursor="pointer">
@@ -63,10 +63,10 @@ const Navbar = () => {
                         );
                     })}
                     <Box position="absolute" right={6}>
-                        <Link to="projects">
+                        <Link to={property.button.href}>
                             <Button colorScheme="teal">
-                                Projects
-                                <Icon ml={1} as={FaClipboardList} />
+                                {property.button.label}
+                                <Icon ml={1} as={property.button.icon} />
                             </Button>
                         </Link>
                     </Box>
@@ -86,7 +86,7 @@ const Navbar = () => {
                     <DrawerCloseButton/>
                     <DrawerHeader>Menu</DrawerHeader>
                     <DrawerBody display="flex" gap={4} flexDirection="column">
-                        {navItems.map((navItem) => {
+                        {property.navbarItems.map((navItem) => {
                             return (
                                 <AnchorLink to={navItem.href} smooth={true} spy={true} duration={750} onClick={onClose}>
                                     <Text>
@@ -97,10 +97,10 @@ const Navbar = () => {
                         })}
                     </DrawerBody>
                     <DrawerFooter justifyContent="flex-start">
-                        <Link to="projects">
+                        <Link to={property.button.href}>
                             <Button colorScheme="teal">
-                                Projects
-                                <Icon ml={1} as={FaClipboardList} />
+                                {property.button.label}
+                                <Icon ml={1} as={property.button.icon} />
                             </Button>
                         </Link>
                     </DrawerFooter>
