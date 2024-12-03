@@ -1,9 +1,11 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.f855e6bc.css",
-    "main.js": "/portfolio/static/js/main.916d59f6.js",
+    "main.js": "/portfolio/static/js/main.cd3ccafd.js",
     "static/js/453.ace21015.chunk.js": "/portfolio/static/js/453.ace21015.chunk.js",
     "static/media/background.jpg": "/portfolio/static/media/background.fa0ac9e93e5928980dc8.jpg",
+    "static/media/thumbnail.png": "/portfolio/static/media/thumbnail.4b6f172e5a1d9b9ce177.png",
+    "static/media/thumbnail.jpeg": "/portfolio/static/media/thumbnail.caf84436cb05f0d293df.jpeg",
     "static/media/PAD.png": "/portfolio/static/media/PAD.eef564ea9a5bd1f1c3c3.png",
     "static/media/Scrum.png": "/portfolio/static/media/Scrum.d480c6dc887337fafd4f.png",
     "static/media/PowerPoint.png": "/portfolio/static/media/PowerPoint.c3058e62cbd60445f648.png",
@@ -25,17 +27,18 @@
     "static/media/CSS.png": "/portfolio/static/media/CSS.02d225c7df0b28341d8d.png",
     "static/media/JavaScript.png": "/portfolio/static/media/JavaScript.2840e272f3582fbab1c1.png",
     "static/media/Coursera.png": "/portfolio/static/media/Coursera.92ae84c4bce596f2edf4.png",
+    "static/media/default.png": "/portfolio/static/media/default.daf1a4d39959f6f2e054.png",
     "static/media/MySQL.png": "/portfolio/static/media/MySQL.a04abbf76b39676bc4d9.png",
     "static/media/React.png": "/portfolio/static/media/React.4e340519e2849d2f8335.png",
     "static/media/Jupyter Notebook.png": "/portfolio/static/media/Jupyter Notebook.7f2131e478d8307b7f91.png",
     "static/media/Python.webp": "/portfolio/static/media/Python.0a4da4c7d2c1aa08c817.webp",
     "index.html": "/portfolio/index.html",
     "main.f855e6bc.css.map": "/portfolio/static/css/main.f855e6bc.css.map",
-    "main.916d59f6.js.map": "/portfolio/static/js/main.916d59f6.js.map",
+    "main.cd3ccafd.js.map": "/portfolio/static/js/main.cd3ccafd.js.map",
     "453.ace21015.chunk.js.map": "/portfolio/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.916d59f6.js"
+    "static/js/main.cd3ccafd.js"
   ]
 }
