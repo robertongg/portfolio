@@ -23,17 +23,10 @@ interface NavbarProp {
 }
 
 const Navbar = (property: NavbarProp) => {
-    const [navbarOpacity, setNavbarOpacity] = useState(0);
     const [toTopOpacity, setToTopOpacity] = useState(0);
     const { isOpen, onOpen, onClose } = useDisclosure();
 
     window.addEventListener("scroll", () => {
-        if (window.scrollY >= 100) {
-            setNavbarOpacity(1);
-        } else {
-            setNavbarOpacity(0);
-        }
-
         if (window.scrollY >= 100) {
             setToTopOpacity(1);
         } else {
@@ -77,7 +70,7 @@ const Navbar = (property: NavbarProp) => {
                     <Button variant="unstyled" position="absolute" left={0} w={12} h={12} onClick={onOpen}>
                         <Icon as={IoMenu} />
                     </Button>
-                    <Heading fontSize="md" fontWeight="semibold" opacity={navbarOpacity} transition="opacity 0.3s ease-in-out">Robert's Portfolio</Heading>
+                    <Heading fontSize="md" fontWeight="semibold">Robert's Portfolio</Heading>
                 </Flex>
             </Box>
             <Drawer isOpen={isOpen} onClose={onClose} placement="left">

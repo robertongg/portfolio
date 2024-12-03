@@ -28,6 +28,12 @@ const CustomImage = (name: string) => {
         case "WORD": return require("../static/images/Word.png");
         case "EXCEL": return require("../static/images/Excel.png");
         case "POWERPOINT": return require("../static/images/PowerPoint.png");
+        case "DEFAULT THUMBNAIL": return require("../static/images/projects/default.png");
+        case "NCS - SINGTEL RPA": return require("../static/images/projects/NCS/Singtel RPA/thumbnail.jpeg");
+        case "NCS - NYP MIGRATION": return require("../static/images/projects/NCS/NYP Migration/thumbnail.png");
+        case "UOW - FACE ANIMATION": return require("../static/images/projects/UOW/Face Animation/thumbnail.png");
+        case "UOW - GIFT SHOP": return require("../static/images/projects/UOW/Gift Shop/thumbnail.png");
+        case "UOW - ROOM BOOKING": return require("../static/images/projects/UOW/Room Booking/thumbnail.png");
     }
 
     return null

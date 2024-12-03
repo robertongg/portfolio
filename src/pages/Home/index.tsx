@@ -1,5 +1,5 @@
 import { Box } from "@chakra-ui/react";
-import { FaClipboardList } from "react-icons/fa";
+import { FaFileCode } from "react-icons/fa";
 
 import CustomSpacer from "../../components/CustomSpacer";
 import CustomAnchor from "../../components/CustomAnchor";
@@ -30,7 +30,7 @@ const navbarItems = [
 const navbarButton = {
     label: "Projects",
     href: "projects",
-    icon: FaClipboardList
+    icon: FaFileCode
 }
 
 const Home = () => {

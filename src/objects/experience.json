@@ -2,10 +2,10 @@
     "$schema": [
         {
             "type": "WORK",
-            "company": "NCS Pte Ltd",
+            "institution": "NCS Pte Ltd",
             "location": "Singapore",
             "logo": "NCS",
-            "position": "Software Engineer",
+            "title": "Software Engineer",
             "from": "Mar 2023",
             "to": null,
             "description": [
@@ -13,12 +13,26 @@
                 "Identify and solve issues from the developed solutions by using various testing to ensure the software solutions work correctly",
                 "Work with clients to solve issues encountered during testing"
             ],
-            "projects": ["Singtel RPA Migration", "NYP Migration Website"],
+            "projects": [
+                {
+                    "name": "Singtel RPA Migration",
+                    "description": "Migration of 300+ Singtel RPA processes from UiPath into Power Automate",
+                    "from": "Jul 2024",
+                    "to": "Jan 2025",
+                    "thumbnail": "NCS - Singtel RPA"
+                }, {
+                    "name": "NYP Migration Website",
+                    "description": "Migration of 8 NYP Websites into Adobe Experience Manager (AEM) by developing components",
+                    "from": "May 2023",
+                    "to": "Jun 2024",
+                    "thumbnail": "NCS - NYP Migration"
+                }
+            ],
             "topPosition": 0,
             "stickyHeight": 975
         }, {
             "type": "STUDY",
-            "school": "NUS-ISS",
+            "institution": "NUS-ISS",
             "location": "Singapore",
             "logo": "NUS-ISS",
             "title": "Graduate Certificate in Designing Modern Software Systems",
@@ -32,7 +46,7 @@
             "stickyHeight": 335
         }, {
             "type": "STUDY",
-            "school": "SIM - University of Wollongong (UOW)",
+            "institution": "SIM - University of Wollongong (UOW)",
             "location": "Singapore",
             "logo": "UOW",
             "title": "Bachelor of Computer Science (Big Data)",
@@ -41,12 +55,32 @@
             "description": [
                 "WAM: 86.30 / 100.00"
             ],
-            "projects": ["Face Animation: A Deep Learning Approach", "Gift Shop website", "Room Booking System"],
+            "projects": [
+                {
+                    "name": "Face Animation: A Deep Learning Approach",
+                    "description": "Chosen as a lead developer in a team of 5 to develop a face animation system and keep tract of the development progress",
+                    "from": "Jan 2022",
+                    "to": "May 2022",
+                    "thumbnail": "UOW - Face Animation"
+                }, {
+                    "name": "Gift Shop Website",
+                    "description": "Developed a prototype of a gift shop website with a brand using ASP.NET framework and database to store and manipulate products",
+                    "from": "Jan 2021",
+                    "to": "Feb 2021",
+                    "thumbnail": "UOW - Gift Shop"
+                }, {
+                    "name": "Room Booking System",
+                    "description": "Recruited and led a team of 6 to develop a prototype of a room booking system and 25 types of reports",
+                    "from": "Apr 2020",
+                    "to": "May 2020",
+                    "thumbnail": "UOW - Room Booking"
+                }
+            ],
             "topPosition": 1280,
             "stickyHeight": 335
         }, {
             "type": "STUDY",
-            "school": "Singapore Institute of Management (SIM)",
+            "institution": "Singapore Institute of Management (SIM)",
             "location": "Singapore",
             "logo": "SIM",
             "title": "Diploma in Management Studies",
@@ -60,10 +94,10 @@
             "stickyHeight": 335
         }, {
             "type": "WORK",
-            "company": "PT Pan Baruna",
+            "institution": "PT Pan Baruna",
             "location": "Indonesia",
             "logo": "PB",
-            "position": "Accounting Intern",
+            "title": "Accounting Intern",
             "from": "May 2018",
             "to": "Sep 2018",
             "description": [

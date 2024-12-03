@@ -5,25 +5,16 @@ import { FaGraduationCap } from "react-icons/fa";
 import CustomHeading from "../../components/CustomHeading";
 import CustomImage from "../../components/CustomImage";
 import { IExperience } from "../../objects/ObjectsInterface";
+import { Link } from "react-router-dom";
 
 const StudyAndCareerCard = (property: IExperience, isRight: boolean, topPosition: number, stickyHeight: number, fullWidth: boolean) => {
     const { isOpen, onClose, onToggle } = useDisclosure();
 
     const logoImage = CustomImage(property.logo);
     const noCardContent = property.description.length < 1 && property.projects.length < 1;
-
-    var cardTitle : string | null;
-    var cardSubtitle : string | null;
-    var cardLogo;
-    if (property.type.toUpperCase() === "WORK") {
-        cardTitle = property.position;
-        cardSubtitle = property.company;
-        cardLogo = BsBriefcaseFill;
-    } else {
-        cardTitle = property.title;
-        cardSubtitle = property.school;
-        cardLogo = FaGraduationCap;
-    }
+    const cardTitle = property.title;
+    const cardSubtitle = property.institution;
+    const cardLogo = property.type.toUpperCase() === "WORK" ? BsBriefcaseFill : FaGraduationCap;
 
     return (
         <Box
@@ -139,7 +130,7 @@ const StudyAndCareerCard = (property: IExperience, isRight: boolean, topPosition
                                     <Heading fontSize="sm" color="#22495e">Projects</Heading>
                                     <UnorderedList pl={1}>
                                         {property.projects.map(item => (
-                                            <ListItem>{item}</ListItem>
+                                            <ListItem>{item.name}</ListItem>
                                         ))}
                                     </UnorderedList>
                                 </Box>
@@ -148,9 +139,11 @@ const StudyAndCareerCard = (property: IExperience, isRight: boolean, topPosition
                     </ModalBody>
                     <ModalFooter>
                         {property.projects.length < 1 ? null :
-                            <Button colorScheme="teal">
-                                See projects
-                            </Button>
+                            <Link to={"projects#" + property.logo}>
+                                <Button colorScheme="teal">
+                                    See projects
+                                </Button>
+                            </Link>
                         }
                     </ModalFooter>
                 </ModalContent>
@@ -160,7 +153,7 @@ const StudyAndCareerCard = (property: IExperience, isRight: boolean, topPosition
 }
 
 const StudyAndCareer = () => {
-    const workData: IExperience[] = require("../../objects/experience.json").$schema;
+    const expData: IExperience[] = require("../../objects/experience.json").$schema;
     const timeline: string[] = ["Present", "Nov 2023", "Apr 2023", "Mar 2023", "June 2022", "Jan 2020", "Oct 2018", "Aug 2018", "May 2018"]
 
     return (
@@ -170,7 +163,7 @@ const StudyAndCareer = () => {
             {/* Desktop View */}
             <Box display={{base: "none", xl: "block"}} position="relative">
                 <Box position="relative" h={2750}>
-                    {workData.map((data, index) => StudyAndCareerCard(data, index % 2 === 0, data.topPosition, data.stickyHeight, false))}
+                    {expData.map((data, index) => StudyAndCareerCard(data, index % 2 === 0, data.topPosition, data.stickyHeight, false))}
                 </Box>
                 <Box position="absolute" top={75} left="50%" transform="translate(-50%, -40px)">
                     {timeline.map((text, index) => (
@@ -205,7 +198,7 @@ const StudyAndCareer = () => {
             {/* Tablet and Mobile View */}
             <Box display={{base: "block", xl: "none"}} position="relative">
                 <Box position="relative" h={2750}>
-                    {workData.map((data) => StudyAndCareerCard(data, true, data.topPosition, data.stickyHeight, true))}
+                    {expData.map((data) => StudyAndCareerCard(data, true, data.topPosition, data.stickyHeight, true))}
                 </Box>
                 <Box position="absolute" top={75} transform="translate(0, -40px)">
                     {timeline.map((text, index) => (

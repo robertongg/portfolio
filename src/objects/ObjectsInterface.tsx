@@ -3,18 +3,24 @@ export interface IAboutMe {
     text: string
 }
 
+export interface IProject {
+    name: string,
+    description: string,
+    from: string,
+    to?: string,
+    thumbnail: string
+}
+
 export interface IExperience {
     type: string,
-    school: string | null,
-    company: string | null,
+    institution: string,
     location: string,
     logo: string,
-    position: string | null,
     title: string | null,
     from: string,
     to?: string,
     description: string[],
-    projects: string[],
+    projects: IProject[],
     topPosition: number,
     stickyHeight: number
 }
