@@ -8,7 +8,8 @@ export interface IProject {
     description: string,
     from: string,
     to?: string,
-    thumbnail: string
+    thumbnail?: string,
+    role?: string[]
 }
 
 export interface IExperience {
@@ -16,6 +17,7 @@ export interface IExperience {
     institution: string,
     location: string,
     logo: string,
+    logoSrc?: string,
     title: string | null,
     from: string,
     to?: string,
@@ -34,6 +36,7 @@ export interface IAchievements {
     title: string,
     associate: string,
     logo: string,
+    logoSrc?: string,
     date: string,
     description: string | null
 }
@@ -45,5 +48,6 @@ export interface ISkills {
 
 export interface ISkillItems {
     title: string,
-    logo: string
+    logo: string,
+    logoSrc?: string
 }

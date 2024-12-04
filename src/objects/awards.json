@@ -4,30 +4,35 @@
             "title": "IMDA Gold Medal Award 2023",
             "associate": "University of Wollongong (UOW)",
             "logo": "UOW",
+            "logoSrc": "/portfolio/static/images/UOW.png",
             "date": "Mar 2023",
             "description": "Top performing graduate overall from the Bachelor of Computer Science (Single Major) in 2023"
         }, {
             "title": "Google Kick Start 2022 - Participant",
             "associate": "Google",
             "logo": "Google",
+            "logoSrc": "/portfolio/static/images/Google.png",
             "date": "Oct 2022",
             "description": "Participated in coding competition (individual) by Google"
         }, {
             "title": "UOW EIS Dean's Merit Award 2021",
             "associate": "University of Wollongong (UOW)",
             "logo": "UOW",
+            "logoSrc": "/portfolio/static/images/UOW.png",
             "date": "Jul 2022",
             "description": "Award for achieving a weighted average mark (WAM) of 85 or more in 2021"
         }, {
             "title": "Shopee Code League 2022 - Participant",
             "associate": "Shopee",
             "logo": "Shopee",
+            "logoSrc": "/portfolio/static/images/Shopee.png",
             "date": "Apr 2022",
             "description": "Participated in coding competition (team of 3) by Shopee"
         }, {
             "title": "UOW EIS Dean's Merit Award 2020",
             "associate": "University of Wollongong (UOW)",
             "logo": "UOW",
+            "logoSrc": "/portfolio/static/images/UOW.png",
             "date": "Jan 2020",
             "description": "Award for achieving a weighted average mark (WAM) of 85 or more in 2020"
         }

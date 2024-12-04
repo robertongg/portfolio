@@ -3,14 +3,13 @@ import { BsBriefcaseFill } from "react-icons/bs";
 import { FaGraduationCap } from "react-icons/fa";
 
 import CustomHeading from "../../components/CustomHeading";
-import CustomImage from "../../components/CustomImage";
 import { IExperience } from "../../objects/ObjectsInterface";
 import { Link } from "react-router-dom";
 
 const StudyAndCareerCard = (property: IExperience, isRight: boolean, topPosition: number, stickyHeight: number, fullWidth: boolean) => {
     const { isOpen, onClose, onToggle } = useDisclosure();
 
-    const logoImage = CustomImage(property.logo);
+    const logoImage = property.logoSrc;
     const noCardContent = property.description.length < 1 && property.projects.length < 1;
     const cardTitle = property.title;
     const cardSubtitle = property.institution;

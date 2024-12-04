@@ -7,7 +7,6 @@ import Navbar from "../Navbar";
 import CustomAnchor from "../../components/CustomAnchor";
 import CustomSpacer from "../../components/CustomSpacer";
 import CustomHeading from "../../components/CustomHeading";
-import CustomImage from "../../components/CustomImage";
 
 const navbarButton = {
     label: "Home",
@@ -16,11 +15,11 @@ const navbarButton = {
 }
 
 const ProjectCard = (project: IProject) => {
-    var imageSrc = CustomImage(project.thumbnail);
+    var imageSrc = project.thumbnail;
     var imageCover = true;
 
     if (!imageSrc) {
-        imageSrc = CustomImage("default thumbnail");
+        imageSrc = "/portfolio/static/images/projects/default.png";
         imageCover = false;
     }
 

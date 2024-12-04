@@ -1,8 +1,7 @@
 import { Box, Flex, Heading } from "@chakra-ui/react"
-import CustomImage from "../../components/CustomImage";
 
 const HeroBanner = () => {
-    const backgroundImage = CustomImage("background");
+    const backgroundImage = "/portfolio/static/images/background.jpg";
     
     return (
         <Box id="top" h="100vh" bgImage={backgroundImage} bgSize="cover" position="relative">

@@ -4,12 +4,14 @@
             "title": "Professional Scrum Developer I (PSD I)",
             "associate": "Scrum.org",
             "logo": "Scrum",
+            "logoSrc": "/portfolio/static/images/Scrum.png",
             "date": "Apr 2023",
             "description": null
         }, {
             "title": "Data Analysis with R Programming",
             "associate": "Coursera",
             "logo": "Coursera",
+            "logoSrc": "/portfolio/static/images/Coursera.png",
             "date": "Sep 2021",
             "description": null
         }

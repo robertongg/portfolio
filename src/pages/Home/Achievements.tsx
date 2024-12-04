@@ -1,12 +1,11 @@
 import { Flex, Heading, Image, Text } from "@chakra-ui/react";
 
 import CustomHeading from "../../components/CustomHeading";
-import CustomImage from "../../components/CustomImage";
 import CustomSpacer from "../../components/CustomSpacer";
 import { IAchievements } from "../../objects/ObjectsInterface";
 
 const AchievementCards = (property: IAchievements) => {
-    const logoImage = CustomImage(property.logo);
+    const logoImage = property.logoSrc;
 
     const cardsWidth = {
         base: "full",

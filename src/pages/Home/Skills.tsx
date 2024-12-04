@@ -2,12 +2,11 @@ import { Flex, Image, Tooltip } from "@chakra-ui/react";
 import { useState } from "react";
 
 import CustomHeading from "../../components/CustomHeading";
-import CustomImage from "../../components/CustomImage";
 import { ISkillItems, ISkills } from "../../objects/ObjectsInterface";
 
 const SkillItem = (property: ISkillItems) => {
     const [isOpen, setOpen] = useState(false);
-    const logoImage = CustomImage(property.logo);
+    const logoImage = property.logoSrc;
 
     return (
         <Tooltip label={property.title} hasArrow bgColor="#438ea6" px={2} fontSize="md" isOpen={isOpen}>

@@ -5,6 +5,7 @@
             "institution": "NCS Pte Ltd",
             "location": "Singapore",
             "logo": "NCS",
+            "logoSrc": "/portfolio/static/images/NCS.png",
             "title": "Software Engineer",
             "from": "Mar 2023",
             "to": null,
@@ -19,13 +20,19 @@
                     "description": "Migration of 300+ Singtel RPA processes from UiPath into Power Automate",
                     "from": "Jul 2024",
                     "to": "Jan 2025",
-                    "thumbnail": "NCS - Singtel RPA"
+                    "thumbnail": "/portfolio/static/images/projects/NCS/Singtel RPA/thumbnail.jpeg",
+                    "role": [
+                        ""
+                    ]
                 }, {
                     "name": "NYP Migration Website",
                     "description": "Migration of 8 NYP Websites into Adobe Experience Manager (AEM) by developing components",
                     "from": "May 2023",
                     "to": "Jun 2024",
-                    "thumbnail": "NCS - NYP Migration"
+                    "thumbnail": "/portfolio/static/images/projects/NCS/NYP Migration/thumbnail.png",
+                    "role": [
+                        "Test"
+                    ]
                 }
             ],
             "topPosition": 0,
@@ -35,6 +42,7 @@
             "institution": "NUS-ISS",
             "location": "Singapore",
             "logo": "NUS-ISS",
+            "logoSrc": "/portfolio/static/images/NUS-ISS.png",
             "title": "Graduate Certificate in Designing Modern Software Systems",
             "from": "Apr 2023",
             "to": "Nov 2023",
@@ -49,6 +57,7 @@
             "institution": "SIM - University of Wollongong (UOW)",
             "location": "Singapore",
             "logo": "UOW",
+            "logoSrc": "/portfolio/static/images/UOW.png",
             "title": "Bachelor of Computer Science (Big Data)",
             "from": "Jan 2020",
             "to": "Jun 2022",
@@ -61,19 +70,19 @@
                     "description": "Chosen as a lead developer in a team of 5 to develop a face animation system and keep tract of the development progress",
                     "from": "Jan 2022",
                     "to": "May 2022",
-                    "thumbnail": "UOW - Face Animation"
+                    "thumbnail": "/portfolio/static/images/projects/UOW/Face Animation/thumbnail.png"
                 }, {
                     "name": "Gift Shop Website",
                     "description": "Developed a prototype of a gift shop website with a brand using ASP.NET framework and database to store and manipulate products",
                     "from": "Jan 2021",
                     "to": "Feb 2021",
-                    "thumbnail": "UOW - Gift Shop"
+                    "thumbnail": "/portfolio/static/images/projects/UOW/Gift Shop/thumbnail.png"
                 }, {
                     "name": "Room Booking System",
                     "description": "Recruited and led a team of 6 to develop a prototype of a room booking system and 25 types of reports",
                     "from": "Apr 2020",
                     "to": "May 2020",
-                    "thumbnail": "UOW - Room Booking"
+                    "thumbnail": "/portfolio/static/images/projects/UOW/Room Booking/thumbnail.png"
                 }
             ],
             "topPosition": 1280,
@@ -83,6 +92,7 @@
             "institution": "Singapore Institute of Management (SIM)",
             "location": "Singapore",
             "logo": "SIM",
+            "logoSrc": "/portfolio/static/images/SIM.png",
             "title": "Diploma in Management Studies",
             "from": "Oct 2018",
             "to": "Dec 2019",

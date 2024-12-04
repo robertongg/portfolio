@@ -5,34 +5,44 @@
             "items": [
                 {
                     "title": "Java",
-                    "logo": "Java"
+                    "logo": "Java",
+                    "logoSrc": "/portfolio/static/images/Java.png"
                 }, {
                     "title": "Python",
-                    "logo": "Python"
+                    "logo": "Python",
+                    "logoSrc": "/portfolio/static/images/Python.webp"
                 }, {
                     "title": "C++",
-                    "logo": "CPP"
+                    "logo": "CPP",
+                    "logoSrc": "/portfolio/static/images/CPP.png"
                 }, {
                     "title": "R",
-                    "logo": "R"
+                    "logo": "R",
+                    "logoSrc": "/portfolio/static/images/R.png"
                 }, {
                     "title": "SQL",
-                    "logo": "SQL"
+                    "logo": "SQL",
+                    "logoSrc": "/portfolio/static/images/SQL.png"
                 }, {
                     "title": "HTML",
-                    "logo": "HTML"
+                    "logo": "HTML",
+                    "logoSrc": "/portfolio/static/images/HTML.png"
                 }, {
                     "title": "CSS",
-                    "logo": "CSS"
+                    "logo": "CSS",
+                    "logoSrc": "/portfolio/static/images/CSS.png"
                 }, {
                     "title": "JavaScript",
-                    "logo": "JavaScript"
+                    "logo": "JavaScript",
+                    "logoSrc": "/portfolio/static/images/JavaScript.png"
                 }, {
                     "title": "jQuery",
-                    "logo": "jQuery"
+                    "logo": "jQuery",
+                    "logoSrc": "/portfolio/static/images/jQuery.png"
                 }, {
                     "title": "TypeScript - React",
-                    "logo": "React"
+                    "logo": "React",
+                    "logoSrc": "/portfolio/static/images/React.png"
                 }
             ]
         }, {
@@ -40,31 +50,40 @@
             "items": [
                 {
                     "title": "MySQL",
-                    "logo": "MySQL"
+                    "logo": "MySQL",
+                    "logoSrc": "/portfolio/static/images/MySQL.png"
                 }, {
                     "title": "Oracle Database",
-                    "logo": "Oracle DB"
+                    "logo": "Oracle DB",
+                    "logoSrc": "/portfolio/static/images/Oracle DB.png"
                 }, {
                     "title": "Jupyter Notebook",
-                    "logo": "Jupyter Notebook"
+                    "logo": "Jupyter Notebook",
+                    "logoSrc": "/portfolio/static/images/Jupyter Notebook.png"
                 }, {
                     "title": "Adobe Experience Manager (AEM)",
-                    "logo": "AEM"
+                    "logo": "AEM",
+                    "logoSrc": "/portfolio/static/images/AEM.png"
                 }, {
                     "title": "Microsoft Power Automate",
-                    "logo": "PAD"
+                    "logo": "PAD",
+                    "logoSrc": "/portfolio/static/images/PAD.png"
                 }, {
                     "title": "Microsoft Project",
-                    "logo": "MS Project"
+                    "logo": "MS Project",
+                    "logoSrc": "/portfolio/static/images/MS Project.png"
                 }, {
                     "title": "Microsoft Word",
-                    "logo": "Word"
+                    "logo": "Word",
+                    "logoSrc": "/portfolio/static/images/Word.png"
                 }, {
                     "title": "Microsoft Excel",
-                    "logo": "Excel"
+                    "logo": "Excel",
+                    "logoSrc": "/portfolio/static/images/Excel.png"
                 }, {
                     "title": "Microsoft PowerPoint",
-                    "logo": "PowerPoint"
+                    "logo": "PowerPoint",
+                    "logoSrc": "/portfolio/static/images/PowerPoint.png"
                 }
             ]
         }
