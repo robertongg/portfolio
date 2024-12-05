@@ -22,7 +22,13 @@
                     "to": "Jan 2025",
                     "thumbnail": "/portfolio/static/images/projects/NCS/Singtel RPA/thumbnail.jpeg",
                     "role": [
-                        ""
+                        "Ensured the developed processes are working well and delivered the tested outputs to users to verify",
+                        "Identified issues reported by users and collaborated with developers to solve the issue",
+                        "Worked with users to understand the reported issues together with developers",
+                        "Deployed processes verified by users to production environment and ensured that processes are working well"
+                    ],
+                    "tools": [
+                        "Microsoft Power Automate"
                     ]
                 }, {
                     "name": "NYP Migration Website",
@@ -31,7 +37,57 @@
                     "to": "Jun 2024",
                     "thumbnail": "/portfolio/static/images/projects/NCS/NYP Migration/thumbnail.png",
                     "role": [
-                        "Test"
+                        "Developed components and templates useful for content population",
+                        "Integrated frontend code provided by frontend developer to backend logic",
+                        "Resolved issues raised by team members and users",
+                        "Implemented changes requested by users"
+                    ],
+                    "tools": [
+                        "Adobe Experience Manager (AEM)",
+                        "HTML",
+                        "CSS",
+                        "JavaScript",
+                        "jQuery",
+                        "Java"
+                    ],
+                    "images": [
+                        {
+                            "imageDesc": "NYP Library",
+                            "imageSrc": "/portfolio/static/images/projects/NCS/NYP Migration/NYP Library.png"
+                        }, {
+                            "imageDesc": "NYP NACE",
+                            "imageSrc": "/portfolio/static/images/projects/NCS/NYP Migration/NYP NACE.png"
+                        }, {
+                            "imageDesc": "NYP ACI",
+                            "imageSrc": "/portfolio/static/images/projects/NCS/NYP Migration/NYP ACI.png"
+                        }, {
+                            "imageDesc": "NYP SIRS",
+                            "imageSrc": "/portfolio/static/images/projects/NCS/NYP Migration/NYP SIRS.png"
+                        }, {
+                            "imageDesc": "NYP Student Portal",
+                            "imageSrc": "/portfolio/static/images/projects/NCS/NYP Migration/NYP Student Portal.png"
+                        }, {
+                            "imageDesc": "NYP International (NYPi)",
+                            "imageSrc": "/portfolio/static/images/projects/NCS/NYP Migration/NYP International.png"
+                        }, {
+                            "imageDesc": "NYP - Persona Selection",
+                            "imageSrc": "/portfolio/static/images/projects/NCS/NYP Migration/NYP - Persona Selection.png"
+                        }, {
+                            "imageDesc": "NYP - Homepage",
+                            "imageSrc": "/portfolio/static/images/projects/NCS/NYP Migration/NYP - Homepage.png"
+                        }, {
+                            "imageDesc": "NYP - Campus Map",
+                            "imageSrc": "/portfolio/static/images/projects/NCS/NYP Migration/NYP - Campus Map.png"
+                        }, {
+                            "imageDesc": "NYP - Search Page",
+                            "imageSrc": "/portfolio/static/images/projects/NCS/NYP Migration/NYP - Search Page.png"
+                        }, {
+                            "imageDesc": "NYP - Course Catalogue",
+                            "imageSrc": "/portfolio/static/images/projects/NCS/NYP Migration/NYP - Course Catalogue.png"
+                        }, {
+                            "imageDesc": "NYP - Course Details Page",
+                            "imageSrc": "/portfolio/static/images/projects/NCS/NYP Migration/NYP - Course Details Page.png"
+                        }
                     ]
                 }
             ],
@@ -67,22 +123,154 @@
             "projects": [
                 {
                     "name": "Face Animation: A Deep Learning Approach",
-                    "description": "Chosen as a lead developer in a team of 5 to develop a face animation system and keep tract of the development progress",
+                    "description": "Developed a face animation system using Generative Adversarial Networks (GAN) model, a deep learning approach",
                     "from": "Jan 2022",
                     "to": "May 2022",
-                    "thumbnail": "/portfolio/static/images/projects/UOW/Face Animation/thumbnail.png"
+                    "thumbnail": "/portfolio/static/images/projects/UOW/Face Animation/thumbnail.png",
+                    "role": [
+                        "Chosen as a lead developer to built a GAN model for the face animation system together with team members",
+                        "Monitored the development of the system",
+                        "Assisted team members in producing reports"
+                    ],
+                    "tools": [
+                        "Python"
+                    ],
+                    "images": [
+                        {
+                            "imageDesc": "Login",
+                            "imageSrc": "/portfolio/static/images/projects/UOW/Face Animation/Login.png"
+                        }, {
+                            "imageDesc": "Homepage",
+                            "imageSrc": "/portfolio/static/images/projects/UOW/Face Animation/Homepage.png"
+                        }, {
+                            "imageDesc": "Animator",
+                            "imageSrc": "/portfolio/static/images/projects/UOW/Face Animation/Animator.png"
+                        }, {
+                            "imageDesc": "Project Details",
+                            "imageSrc": "/portfolio/static/images/projects/UOW/Face Animation/Project Details.png"
+                        }, {
+                            "imageDesc": "About Us",
+                            "imageSrc": "/portfolio/static/images/projects/UOW/Face Animation/About Us.png"
+                        }, {
+                            "imageDesc": "System Architecture",
+                            "imageSrc": "/portfolio/static/images/projects/UOW/Face Animation/System Architecture.png"
+                        }
+                    ]
                 }, {
                     "name": "Gift Shop Website",
                     "description": "Developed a prototype of a gift shop website with a brand using ASP.NET framework and database to store and manipulate products",
                     "from": "Jan 2021",
                     "to": "Feb 2021",
-                    "thumbnail": "/portfolio/static/images/projects/UOW/Gift Shop/thumbnail.png"
+                    "thumbnail": "/portfolio/static/images/projects/UOW/Gift Shop/thumbnail.png",
+                    "role": [
+                        "Designed and implemented the frontend of the website",
+                        "Integrated the frontend of the website with database using ASP.NET framework to store and manipulate products"
+                    ],
+                    "tools": [
+                        "ASP.NET framework",
+                        "HTML",
+                        "CSS",
+                        "jQuery",
+                        "Microsoft SQL Server"
+                    ],
+                    "images": [
+                        {
+                            "imageDesc": "Login Page",
+                            "imageSrc": "/portfolio/static/images/projects/UOW/Gift Shop/Login Page.png"
+                        }, {
+                            "imageDesc": "Homepage",
+                            "imageSrc": "/portfolio/static/images/projects/UOW/Gift Shop/Homepage 1.png"
+                        }, {
+                            "imageDesc": "Homepage",
+                            "imageSrc": "/portfolio/static/images/projects/UOW/Gift Shop/Homepage 2.png"
+                        }, {
+                            "imageDesc": "Homepage",
+                            "imageSrc": "/portfolio/static/images/projects/UOW/Gift Shop/Homepage 2a.png"
+                        }, {
+                            "imageDesc": "Homepage",
+                            "imageSrc": "/portfolio/static/images/projects/UOW/Gift Shop/Homepage 3.png"
+                        }, {
+                            "imageDesc": "Homepage",
+                            "imageSrc": "/portfolio/static/images/projects/UOW/Gift Shop/Homepage 3a.png"
+                        }, {
+                            "imageDesc": "Homepage",
+                            "imageSrc": "/portfolio/static/images/projects/UOW/Gift Shop/Homepage 4.png"
+                        }, {
+                            "imageDesc": "Homepage",
+                            "imageSrc": "/portfolio/static/images/projects/UOW/Gift Shop/Homepage 4a.png"
+                        }, {
+                            "imageDesc": "Footer",
+                            "imageSrc": "/portfolio/static/images/projects/UOW/Gift Shop/Footer.png"
+                        }, {
+                            "imageDesc": "Product Catalogue",
+                            "imageSrc": "/portfolio/static/images/projects/UOW/Gift Shop/Product Page.png"
+                        }, {
+                            "imageDesc": "Product Details",
+                            "imageSrc": "/portfolio/static/images/projects/UOW/Gift Shop/Product Details Page.png"
+                        }, {
+                            "imageDesc": "Shopping Cart",
+                            "imageSrc": "/portfolio/static/images/projects/UOW/Gift Shop/Shopping Cart Page.png"
+                        }, {
+                            "imageDesc": "Edit Shopping Cart Item",
+                            "imageSrc": "/portfolio/static/images/projects/UOW/Gift Shop/Cart Item Edit Page.png"
+                        }, {
+                            "imageDesc": "System Design",
+                            "imageSrc": "/portfolio/static/images/projects/UOW/Gift Shop/System Design.png"
+                        }, {
+                            "imageDesc": "Database UML",
+                            "imageSrc": "/portfolio/static/images/projects/UOW/Gift Shop/Database UML.png"
+                        }
+                    ]
                 }, {
                     "name": "Room Booking System",
-                    "description": "Recruited and led a team of 6 to develop a prototype of a room booking system and 25 types of reports",
+                    "description": "Developed a room booking system with three types of users (staff, student, and super user), where each type of users has different access of pages",
                     "from": "Apr 2020",
                     "to": "May 2020",
-                    "thumbnail": "/portfolio/static/images/projects/UOW/Room Booking/thumbnail.png"
+                    "thumbnail": "/portfolio/static/images/projects/UOW/Room Booking/thumbnail.png",
+                    "role": [
+                        "Recruited and led a team of 6 to develop a prototype of a room booking system",
+                        "Monitored the progress and quality of the system developed by team members",
+                        "Assisted team members in producing 25 types of reports"
+                    ],
+                    "images": [
+                        {
+                            "imageDesc": "Staff Homepage",
+                            "imageSrc": "/portfolio/static/images/projects/UOW/Room Booking/Staff Homepage.png"
+                        }, {
+                            "imageDesc": "Staff Page - Create Room",
+                            "imageSrc": "/portfolio/static/images/projects/UOW/Room Booking/Staff Page - Create Room.png"
+                        }, {
+                            "imageDesc": "Staff Page - Edit Room",
+                            "imageSrc": "/portfolio/static/images/projects/UOW/Room Booking/Staff Page - Edit Room.png"
+                        }, {
+                            "imageDesc": "Super User Homepage",
+                            "imageSrc": "/portfolio/static/images/projects/UOW/Room Booking/Super User Homepage.png"
+                        }, {
+                            "imageDesc": "Super User Page - Manage Request",
+                            "imageSrc": "/portfolio/static/images/projects/UOW/Room Booking/Super User Page - Manage Request.png"
+                        }, {
+                            "imageDesc": "Super User Page - Room Details",
+                            "imageSrc": "/portfolio/static/images/projects/UOW/Room Booking/Super User Page - Room Details.png"
+                        }, {
+                            "imageDesc": "Super User Page - Booking History",
+                            "imageSrc": "/portfolio/static/images/projects/UOW/Room Booking/Super User Page - Booking History.png"
+                        }, {
+                            "imageDesc": "Student homepage",
+                            "imageSrc": "/portfolio/static/images/projects/UOW/Room Booking/Student Homepage.png"
+                        }, {
+                            "imageDesc": "Student Page - Book Room",
+                            "imageSrc": "/portfolio/static/images/projects/UOW/Room Booking/Student Page - Book Room.png"
+                        }, {
+                            "imageDesc": "Student Page - Book Checkout",
+                            "imageSrc": "/portfolio/static/images/projects/UOW/Room Booking/Student Page - Book Checkout.png"
+                        }, {
+                            "imageDesc": "Student Page - Booking Management",
+                            "imageSrc": "/portfolio/static/images/projects/UOW/Room Booking/Student Page - Booking Management.png"
+                        }, {
+                            "imageDesc": "System Design",
+                            "imageSrc": "/portfolio/static/images/projects/UOW/Room Booking/System Design.png"
+                        }
+                    ]
                 }
             ],
             "topPosition": 1280,

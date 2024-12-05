@@ -3,13 +3,20 @@ export interface IAboutMe {
     text: string
 }
 
+export interface IProjectImage {
+    imageDesc?: string,
+    imageSrc: string
+}
+
 export interface IProject {
     name: string,
     description: string,
     from: string,
     to?: string,
     thumbnail?: string,
-    role?: string[]
+    role?: string[],
+    tools?: string[],
+    images?: IProjectImage[]
 }
 
 export interface IExperience {
