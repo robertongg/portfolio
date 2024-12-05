@@ -19,7 +19,8 @@ interface ButtonProp {
 
 interface NavbarProp {
     navbarItems: NavbarItemProp[],
-    button: ButtonProp
+    button: ButtonProp,
+    buttonRightPosition?: boolean
 }
 
 const Navbar = (property: NavbarProp) => {
@@ -55,7 +56,7 @@ const Navbar = (property: NavbarProp) => {
                             </AnchorLink>
                         );
                     })}
-                    <Box position="absolute" right={6}>
+                    <Box position="absolute" right={property.buttonRightPosition ? 6 : "unset"} left={property.buttonRightPosition ? "unset" : 6}>
                         <Link to={property.button.href}>
                             <Button colorScheme="teal">
                                 {property.button.label}
@@ -70,7 +71,9 @@ const Navbar = (property: NavbarProp) => {
                     <Button variant="unstyled" position="absolute" left={0} w={12} h={12} onClick={onOpen}>
                         <Icon as={IoMenu} />
                     </Button>
-                    <Heading fontSize="md" fontWeight="semibold">Robert's Portfolio</Heading>
+                    <Link to="/portfolio">
+                        <Heading fontSize="md" fontWeight="semibold">Robert's Portfolio</Heading>
+                    </Link>
                 </Flex>
             </Box>
             <Drawer isOpen={isOpen} onClose={onClose} placement="left">

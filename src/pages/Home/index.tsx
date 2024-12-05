@@ -39,7 +39,7 @@ const Home = () => {
     return (
         <>
             <HeroBanner/>
-            <Navbar navbarItems={navbarItems} button={navbarButton}/>
+            <Navbar navbarItems={navbarItems} button={navbarButton} buttonRightPosition/>
             <Box px={{base: 6, sm: 10}} py={{base: 4, sm: 6}} minH={pageHeight}>
                 <CustomAnchor id="aboutMe" />
                 <AboutMe/>
