@@ -1,6 +1,13 @@
 {
     "$schema": [
         {
+            "title": "Hack Singapore 2023 (Sustainability) - Participant",
+            "associate": "AngelHack",
+            "logo": "AngelHack",
+            "logoSrc": "/portfolio/static/images/AngelHack.jpg",
+            "date": "Jun 2023",
+            "description": "Participated in coding competition (team of 4) by AngelHack"
+        }, {
             "title": "IMDA Gold Medal Award 2023",
             "associate": "University of Wollongong (UOW)",
             "logo": "UOW",

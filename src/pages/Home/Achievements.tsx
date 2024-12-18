@@ -11,13 +11,13 @@ const AchievementCards = (property: IAchievements) => {
         base: "full",
         sm: "calc((100% - 1rem) / 2)",
         md: "calc((100% - 2rem) / 3)",
-        lg: "calc((100% - 3rem) / 4)",
-        xl: "calc((100% - 4rem) / 5)"
+        lg: "calc((100% - 3rem) / 3)",
+        xl: "calc((100% - 4rem) / 3)"
     }
 
     return (
         <Flex w={cardsWidth} flexDirection="column" textAlign="center" gap={{base: 2, sm: 1}}>
-            {logoImage ? <Image objectFit="contain" w="full" h={12} src={logoImage} alt={property.logo} my={4} /> : null}
+            {logoImage ? <Image objectFit="contain" w="full" h={16} src={logoImage} alt={property.logo} mt={4} mb={8} /> : null}
             <Heading w="full" size={{base: "sm", sm: "xs"}}>{property.title}</Heading>
             <Text w="full" fontSize={{base: "sm", sm: "xs"}}>{property.date}</Text>
             {property.description ? <Text w="full" fontSize="xs" color="gray">{property.description}</Text> : null}
@@ -40,7 +40,7 @@ const Achievements = () => {
                 </Flex>
             </Flex>
 
-            <CustomSpacer size={12} />
+            <CustomSpacer size={16} />
 
             <Flex flexDirection="column" gap={4}>
                 <CustomHeading text="Certification" isSubheading isCenter></CustomHeading>
