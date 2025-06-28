@@ -112,7 +112,7 @@ const Navbar = (property: NavbarProp) => {
                     borderRadius="full"
                     position="fixed"
                     zIndex={99}
-                    bottom="8" right="8"
+                    bottom="8" right={{base: "8", md: "calc(50% - 2rem)"}}
                     fontSize="4xl"
                 >
                     <Icon as={MdOutlineKeyboardArrowUp} />

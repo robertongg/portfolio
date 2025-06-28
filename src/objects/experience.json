@@ -16,10 +16,27 @@
             ],
             "projects": [
                 {
+                    "name": "NHG NBS - RPA",
+                    "description": "Development of RPA solutions to automate various NHG Health hospitals bill verification using UiPath",
+                    "from": "Mar 2025",
+                    "to": null,
+                    "thumbnail": "/portfolio/static/images/projects/NCS/NHG NBS RPA/thumbnail.jpeg",
+                    "role": [
+                        "Gather and analyze requirements from users related to hospital bill verification workflows",
+                        "Design and develop RPA solutions based on users requirements",
+                        "Deploy unattended RPA bots to production environments",
+                        "Document comprehensive user guides to support the adoption of RPA solutions",
+                        "Conduct demos to users for RPA process utilization",
+                        "Investigate and resolve issues reported by users to ensure smooth execution"
+                    ],
+                    "tools": [
+                        "UiPath"
+                    ]
+                }, {
                     "name": "Singtel RPA Migration",
                     "description": "Migration of 300+ Singtel RPA processes from UiPath into Power Automate",
                     "from": "Jul 2024",
-                    "to": "Jan 2025",
+                    "to": "Mar 2025",
                     "thumbnail": "/portfolio/static/images/projects/NCS/Singtel RPA/thumbnail.jpeg",
                     "role": [
                         "Ensured the developed processes are working well and delivered the tested outputs to users to verify",

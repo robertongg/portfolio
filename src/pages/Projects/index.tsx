@@ -126,7 +126,7 @@ const ProjectCard = (project: IProject, institution: string) => {
                     <ModalCloseButton/>
                     <ModalBody>
                         <Heading size="lg" color="#22495e">{project.name}</Heading>
-                        <Text>{project.from} - {project.to}</Text>
+                        <Text>{project.from} - {project.to ? project.to : "Present"}</Text>
 
                         <Heading mt={4} size="sm" color="#438ea6">Description:</Heading>
                         <Text>{project.description}</Text>

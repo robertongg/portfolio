@@ -16,10 +16,6 @@
                     "logo": "CPP",
                     "logoSrc": "/portfolio/static/images/CPP.png"
                 }, {
-                    "title": "R",
-                    "logo": "R",
-                    "logoSrc": "/portfolio/static/images/R.png"
-                }, {
                     "title": "SQL",
                     "logo": "SQL",
                     "logoSrc": "/portfolio/static/images/SQL.png"
@@ -57,10 +53,6 @@
                     "logo": "Oracle DB",
                     "logoSrc": "/portfolio/static/images/Oracle DB.png"
                 }, {
-                    "title": "Jupyter Notebook",
-                    "logo": "Jupyter Notebook",
-                    "logoSrc": "/portfolio/static/images/Jupyter Notebook.png"
-                }, {
                     "title": "Adobe Experience Manager (AEM)",
                     "logo": "AEM",
                     "logoSrc": "/portfolio/static/images/AEM.png"
@@ -69,9 +61,9 @@
                     "logo": "PAD",
                     "logoSrc": "/portfolio/static/images/PAD.png"
                 }, {
-                    "title": "Microsoft Project",
-                    "logo": "MS Project",
-                    "logoSrc": "/portfolio/static/images/MS Project.png"
+                    "title": "UiPath",
+                    "logo": "UiPath",
+                    "logoSrc": "/portfolio/static/images/UiPath.png"
                 }, {
                     "title": "Microsoft Word",
                     "logo": "Word",

@@ -32,7 +32,7 @@ const Footer = () => {
                 transform="translate(0, -50%)"
                 mt={{base: 10, sm: 4, md: 0}}
             >
-                Last Update: 31 October 2024
+                Last Update: 28 June 2025
             </Text>
         </Box>
     );
