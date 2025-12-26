@@ -10,54 +10,50 @@
             "from": "Mar 2023",
             "to": null,
             "description": [
-                "Collaborate with project team members to develop software solutions based on user requirements",
-                "Identify and solve issues from the developed solutions by using various testing to ensure the software solutions work correctly",
-                "Work with clients to solve issues encountered during testing"
+                "Involved in 3 projects, including Web Development and RPA Automation, focused on developing and deploying solutions in cross-functional teams",
+                "Worked with users to gather and analyze business requirements, identify issues, and ensure that delivered solutions met business goals and addressed user needs"
             ],
             "projects": [
                 {
                     "name": "NHG NBS - RPA",
-                    "description": "Development of RPA solutions to automate various NHG Health hospitals bill verification using UiPath",
+                    "description": "Automating bills verification on National Billing System (NBS) using RPA unattended robot with UiPath Studio across 6 institutions in NHG Health cluster",
                     "from": "Mar 2025",
                     "to": null,
                     "thumbnail": "/portfolio/static/images/projects/NCS/NHG NBS RPA/thumbnail.jpeg",
                     "role": [
-                        "Gather and analyze requirements from users related to hospital bill verification workflows",
-                        "Design and develop RPA solutions based on users requirements",
-                        "Deploy unattended RPA bots to production environments",
-                        "Document comprehensive user guides to support the adoption of RPA solutions",
-                        "Conduct demos to users for RPA process utilization",
-                        "Investigate and resolve issues reported by users to ensure smooth execution"
+                        "Gather and analyze requirements from key stakeholders in Finance, Business Office, and Operations departments across 6 institutions in NHG Health cluster to identify key processes for automation",
+                        "Collaborated within a team of 6 to design and develop 50+ RPA workflows, utilizing UiPath Studio to automate the bill verification process, improving accuracy and efficiency across institutions",
+                        "Deploy RPA workflows to each individual stakeholders, ensuring smooth execution in the production environment",
+                        "Document comprehensive user guides for stakeholders to support the adoption of RPA workflows",
+                        "Investigate and resolve issues reported by stakeholders, collaborating with them to understand the root cause and implement fixes"
                     ],
                     "tools": [
                         "UiPath"
                     ]
                 }, {
                     "name": "Singtel RPA Migration",
-                    "description": "Migration of 300+ Singtel RPA processes from UiPath into Power Automate",
+                    "description": "Migration of 300+ Singtel RPA workflows across 10+ tenants from UiPath Studio to Power Automate",
                     "from": "Jul 2024",
                     "to": "Mar 2025",
                     "thumbnail": "/portfolio/static/images/projects/NCS/Singtel RPA/thumbnail.jpeg",
                     "role": [
-                        "Ensured the developed processes are working well and delivered the tested outputs to users to verify",
-                        "Identified issues reported by users and collaborated with developers to solve the issue",
-                        "Worked with users to understand the reported issues together with developers",
-                        "Deployed processes verified by users to production environment and ensured that processes are working well"
+                        "Ensured proper functionality of 300+ RPA workflows migrated from UiPath Studio to Power Automate, conducting thorough testing to deliver tested outputs for user verification",
+                        "Collaborate with users from 10+ tenants and development teams in Cheng Du and Singapore, involving over 20+ developers, to identify and resolve any issues during testing and migration, ensuring smooth and accurate execution of the workflows",
+                        "Deployed RPA workflows to production environment, maintaining minimal downtime during deployment"
                     ],
                     "tools": [
                         "Microsoft Power Automate"
                     ]
                 }, {
                     "name": "NYP Migration Website",
-                    "description": "Migration of 8 NYP Websites into Adobe Experience Manager (AEM) by developing components",
+                    "description": "Migration of 8 Nanyang Polytechnic (NYP) websites into Adobe Experience Manager (AEM)",
                     "from": "May 2023",
                     "to": "Jun 2024",
                     "thumbnail": "/portfolio/static/images/projects/NCS/NYP Migration/thumbnail.png",
                     "role": [
-                        "Developed components and templates useful for content population",
-                        "Integrated frontend code provided by frontend developer to backend logic",
-                        "Resolved issues raised by team members and users",
-                        "Implemented changes requested by users"
+                        "Worked in a team of 6 to develop 50+ components and 30+ templates in AEM for page content replication across 8 NYP websites",
+                        "Collaborated with frontend developers to integrate frontend scripts (HTML, CSS, TypeScript) to backend logic using AEM API, ensuring seamless functionality of the user interface (UI) and user experience (UX)",
+                        "Worked closely with users to identify and resolve issues, ensuring that the migrated websites met business requirements and user expectations"
                     ],
                     "tools": [
                         "Adobe Experience Manager (AEM)",
@@ -140,14 +136,14 @@
             "projects": [
                 {
                     "name": "Face Animation: A Deep Learning Approach",
-                    "description": "Developed a face animation system using Generative Adversarial Networks (GAN) model, a deep learning approach",
+                    "description": "Built a face animation system using a deep learning approach with Generative Adversarial Networks (GAN) model",
                     "from": "Jan 2022",
                     "to": "May 2022",
                     "thumbnail": "/portfolio/static/images/projects/UOW/Face Animation/thumbnail.png",
                     "role": [
-                        "Chosen as a lead developer to built a GAN model for the face animation system together with team members",
-                        "Monitored the development of the system",
-                        "Assisted team members in producing reports"
+                        "Led the development of the GAN model for the face animation system",
+                        "Worked closely in a team of 5 to build the deep learning model, ensuring optimal accuracy throughout the process",
+                        "Produced detailed documentation and progress reports"
                     ],
                     "tools": [
                         "Python"
@@ -175,13 +171,13 @@
                     ]
                 }, {
                     "name": "Gift Shop Website",
-                    "description": "Developed a prototype of a gift shop website with a brand using ASP.NET framework and database to store and manipulate products",
+                    "description": "Developed a prototype of a gift shop website using ASP.NET framework",
                     "from": "Jan 2021",
                     "to": "Feb 2021",
                     "thumbnail": "/portfolio/static/images/projects/UOW/Gift Shop/thumbnail.png",
                     "role": [
-                        "Designed and implemented the frontend of the website",
-                        "Integrated the frontend of the website with database using ASP.NET framework to store and manipulate products"
+                        "Developed a functional prototype of a gift shop website using the ASP.NET framework",
+                        "Designed and implemented both frontend and backend components, ensuring smooth integration and usability"
                     ],
                     "tools": [
                         "ASP.NET framework",
@@ -240,14 +236,14 @@
                     ]
                 }, {
                     "name": "Room Booking System",
-                    "description": "Developed a room booking system with three types of users (staff, student, and super user), where each type of users has different access of pages",
+                    "description": "Developed a room booking system with role-based access control for staff, students, and super-users",
                     "from": "Apr 2020",
                     "to": "May 2020",
                     "thumbnail": "/portfolio/static/images/projects/UOW/Room Booking/thumbnail.png",
                     "role": [
-                        "Recruited and led a team of 6 to develop a prototype of a room booking system",
-                        "Monitored the progress and quality of the system developed by team members",
-                        "Assisted team members in producing 25 types of reports"
+                        "Led a team of 6 to develop the system throughout the development life-cycle",
+                        "Monitored the development progress and system quality, ensuring timely project delivery",
+                        "Produced comprehensive documentation and progress reports"
                     ],
                     "images": [
                         {
