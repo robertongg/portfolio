@@ -1,6 +1,13 @@
 {
     "$schema": [
         {
+            "title": "UiPath Agentic Automation Associate",
+            "associate": "UiPath",
+            "logo": "UiPath",
+            "logoSrc": "/portfolio/static/images/UiPath.png",
+            "date": "Jan 2026",
+            "description": null
+        }, {
             "title": "Professional Scrum Developer I (PSD I)",
             "associate": "Scrum.org",
             "logo": "Scrum",
