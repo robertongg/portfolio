@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
 
 import './App.css';
+
 import Layout from './pages/Layout';
 import Home from './pages/Home';
 import { Box } from '@chakra-ui/react';
