@@ -1,9 +1,9 @@
 import { Box, Button, Card, CardBody, CardFooter, CardHeader, Collapse, Flex, Heading, Icon, Image, ListItem, Tag, Text, UnorderedList } from "@chakra-ui/react";
-import { IExperience, IProject } from "../../objects/ObjectsInterface";
-import Navbar from "../Navbar";
-import { useState } from "react";
-import { IoIosArrowBack, IoIosArrowDown, IoIosArrowForward, IoIosArrowUp } from "react-icons/io";
 import CustomSection from "../../components/CustomSection";
+import { useState } from "react";
+import { IExperience, IProject } from "../../objects/ObjectsInterface";
+import { Link } from "react-router-dom";
+import { IoIosArrowBack, IoIosArrowDown, IoIosArrowForward, IoIosArrowUp } from "react-icons/io";
 
 interface FeaturedProjectsCardProp {
     companyName: string,
@@ -50,30 +50,33 @@ const FeaturedProjectsCard = (property: FeaturedProjectsCardProp) => {
             }}
         >
             <CardHeader
-                display={{base: "block", sm: "Flex", md: "block", lg: "flex"}}
+                display={{base: "block", sm: "flex"}}
                 justifyContent={"space-between"}
                 gap={5}
             >
-                <Heading
-                    fontSize={{base: "smaller", lg: "large"}}
-                    color={isCardOpen ? "#00f2fe" : "inherit"}
-                >
-                    {property.projectDetails.name}
-                </Heading>
+                <Box w={"full"}>
+                    <Heading
+                        fontSize={{base: "smaller", md: "large"}}
+                        color={"#00f2fe"}
+                    >
+                        {property.projectDetails.name}
+                    </Heading>
+                    <Text fontSize={{base: "xs", md: "medium"}}>{property.companyName}, {property.companyLocation}</Text>
+                </Box>
                 <Text
-                    w={{base: "full", sm: 40, md: "full", lg: 44}}
-                    textAlign={{base: "left", sm: "right", md: "left", lg: "right"}}
-                    color={isCardOpen ? "#00f2fe" : "#aaa"}
-                    fontSize={{base: "2xs", lg: "smaller"}}
+                    w={{base: "full", sm: 40, md: 44}}
+                    textAlign={{base: "left", sm: "right"}}
+                    color={"#aaa"}
+                    fontSize={{base: "2xs", md: "smaller"}}
                 >
                     {property.projectDetails.from} - {property.projectDetails.to ? property.projectDetails.to : "Present"}
                 </Text>
             </CardHeader>
             <Collapse in={isCardOpen} >
-                <CardBody mt={{base: 4, md: 6}} display={"flex"} flexDir={"column"} gap={4} fontSize={{base: "xs", lg: "medium"}}>
+                <CardBody mt={{base: 4, md: 6}} display={"flex"} flexDir={"column"} gap={4} fontSize={{base: "xs", md: "medium"}}>
                     {property.projectDetails.description == null ? null :
                         <Box>
-                            <Heading fontSize={{base: "xs", lg: "medium"}}>Project Description:</Heading>
+                            <Heading fontSize={{base: "xs", md: "medium"}}>Project Description:</Heading>
                             <Text>
                                 {property.projectDetails.description}
                             </Text>
@@ -109,24 +112,24 @@ const FeaturedProjectsCard = (property: FeaturedProjectsCardProp) => {
                             position={"relative"}
                             overflow={"hidden"}
                             borderRadius={4}
-                            justifyContent={{base: "center",sm: "space-between", md: "center", lg: "space-between"}}
+                            justifyContent={{base: "center", md: "space-between"}}
                             alignItems={"center"}
-                            flexWrap={{base: "wrap", sm: "nowrap", md: "wrap", lg: "nowrap"}}
-                            gap={{base: 4, sm: "unset", md: 4, lg: "unset"}}
+                            flexWrap={{base: "wrap", md: "nowrap"}}
+                            gap={{base: 4, md: "unset"}}
                         >
                             <Button
                                 variant={"unstyled"}
                                 w={10}
                                 h={10}
-                                ml={{base: "none", sm: 4, md: "none", lg: 4}}
+                                ml={{base: "none", md: 4}}
                                 bg={"linear-gradient(135deg, #00f2fe, #4facfe)"}
                                 border={"none"}
                                 borderRadius={8}
                                 color={"black"}
                                 transition={"0.3s ease"}
-                                transform={{base: "scale(0.8)", md: "scale(0.8)", lg: "unset"}}
+                                transform={{base: "scale(0.8)", md: "unset"}}
                                 _hover={{
-                                    transform: {base: "scale(0.85)", lg: "translateY(-3px) scale(1.05)"},
+                                    transform: {base: "scale(0.85)", md: "translateY(-3px) scale(1.05)"},
                                     boxShadow: "0 0 18px rgba(0,242,254,0.6)"
                                 }}
                                 onClick={prevImageFunction}
@@ -134,9 +137,9 @@ const FeaturedProjectsCard = (property: FeaturedProjectsCardProp) => {
                                 <Icon as={IoIosArrowBack}></Icon>
                             </Button>
                             <Flex
-                                w={{base: "full", sm: "calc(100% - 140px)", md: "full", lg: "calc(100% - 140px)"}}
+                                w={{base: "full", md: "calc(100% - 140px)"}}
                                 aspectRatio={"16 / 9"}
-                                order={{base: "-1", sm: "unset", md: "-1", lg: "unset"}}
+                                order={{base: "-1", md: "unset"}}
                                 pos={"relative"}
                                 alignItems={"center"}
                                 justifyContent={"center"}
@@ -163,15 +166,15 @@ const FeaturedProjectsCard = (property: FeaturedProjectsCardProp) => {
                                 variant={"unstyled"}
                                 w={10}
                                 h={10}
-                                mr={{base: "none", sm: 4, md: "none", lg: 4}}
+                                mr={{base: "none", md: 4}}
                                 bg={"linear-gradient(135deg, #00f2fe, #4facfe)"}
                                 border={"none"}
                                 borderRadius={8}
                                 color={"black"}
                                 transition={"0.3s ease"}
-                                transform={{base: "scale(0.8)", lg: "unset"}}
+                                transform={{base: "scale(0.8)", md: "unset"}}
                                 _hover={{
-                                    transform: {base: "scale(0.85)", sm: "translateY(-3px) scale(1.05)", md: "scale(0.85)", lg: "translateY(-3px) scale(1.05)"},
+                                    transform: {base: "scale(0.85)", md: "translateY(-3px) scale(1.05)"},
                                     boxShadow: "0 0 18px rgba(0,242,254,0.6)"
                                 }}
                                 onClick={nextImageFunction}
@@ -182,7 +185,7 @@ const FeaturedProjectsCard = (property: FeaturedProjectsCardProp) => {
                     }
                 </CardBody>
             </Collapse>
-            <CardFooter color={"#00f2fe"} mt={4} fontSize={{base: "xs", sm: "smaller", md: "xs", lg: "smaller"}}>
+            <CardFooter color={"#00f2fe"} mt={4} fontSize={{base: "xs", md: "smaller"}}>
                 <Text
                     display={"flex"}
                     alignItems={"center"}
@@ -199,100 +202,57 @@ const FeaturedProjectsCard = (property: FeaturedProjectsCardProp) => {
     );
 }
 
-interface NavbarItemProp {
-    title: string,
-    href: string,
-    subItems?: NavbarItemProp[]
-}
-
-const Projects = () => {
+const FeaturedProjects = () => {
     const expData: IExperience[] = require("../../objects/experience.json").$schema;
 
-    const navbarItems: NavbarItemProp[] = [
-        {
-            title: "HOME",
-            href: "../"
-        }
-    ]
-
-    for (let i = 0; i < expData.length; i++) {
-        if (expData[i].projects && expData[i].projects.length > 0) {
-            let projects = [];
-            for (let j = 0; j < expData[i].projects.length; j++) {
-                const project = expData[i].projects[j];
-                projects.push({
-                    title: project.name,
-                    href: project.id
-                });
-            }
-
-            navbarItems.push({
-                title: expData[i].institution,
-                href: expData[i].id,
-                subItems: projects
-            });
-        }
-    }
-
     return (
-        <>
-            <Navbar navbarItems={navbarItems} isSideNavigation />
+        <CustomSection sectionID="projects" sectionHeader="Featured Projects" content={
             <Flex
                 w={"full"}
-                maxW={"1500px"}
-                p={"20px"}
+                maxW={"850px"}
                 m={"auto"}
+                flexDir={"column"}
+                alignItems={"center"}
             >
-                <Box display={{base: "none", md: "block"}} w={{base:"300px", lg: "325px"}}></Box>
-                <Box
-                    w={{base: "full", md: "calc(100% - 300px)", lg: "calc(100% - 325px)"}}
-                    ml={{base: 0, md: 6}}
-                    mt={{base: -20, md: -28}}
+                <Flex
+                    w={"full"}
+                    flexDir={"column"}
+                    gap={4}
                 >
-                        <CustomSection sectionID="" sectionHeader="All Projects" content={
-                            <Flex flexDir={"column"} gap={20}>
-                                {expData.map((expItem) => {
-                                    return (
-                                        !expItem.projects || expItem.projects.length <= 0 ? null :
-                                        <Flex
-                                            flexDir={"column"}
-                                            gap={6}
-                                            id={expItem.id}
-                                            mt={{base: -20, md: -24}}
-                                            pt={{base: 20, md: 24}}
-                                        >
-                                            <Heading
-                                                fontSize={{base: "large", md: "2xl"}}
-                                                color={"#00f2fe"}
-                                            >
-                                                {expItem.institution}, {expItem.location}
-                                            </Heading>
-                                            <Flex gap={8} flexWrap={"wrap"} justifyContent={"center"}>
-                                                {expItem.projects.map((project) => {
-                                                    return (
-                                                        <Box
-                                                            id={project.id}
-                                                            w={"full"}
-                                                            mt={{base: -20, md: -24}}
-                                                            pt={{base: 20, md: 24}}>
-                                                            <FeaturedProjectsCard
-                                                                companyName={expItem.institution}
-                                                                companyLocation={expItem.location}
-                                                                projectDetails={project}
-                                                            />
-                                                        </Box>
-                                                    );
-                                                })}
-                                            </Flex>
-                                        </Flex>
-                                    );
-                                })}
-                            </Flex>
-                        } />
-                </Box>
+                    {expData[0].projects.map((project) => {
+                        return (
+                            <FeaturedProjectsCard
+                                companyName={expData[0].institution}
+                                companyLocation={expData[0].location}
+                                projectDetails={project}
+                            />
+                        );
+                    })}
+                </Flex>
+                <Link to={"projects"}>
+                    <Button
+                        id="hero-banner-roles"
+                        variant={"unstyled"}
+                        w={"fit-content"}
+                        px={6}
+                        mt={{base: 6, md: 8}}
+                        border={"none"}
+                        borderRadius={20}
+                        bg={"linear-gradient(135deg, #00f2fe, #4facfe)"}
+                        color={"black"}
+                        fontSize={{base: "xs", md: "smaller"}}
+                        transition={"0.3s ease"}
+                        _hover={{
+                            transform: "translateY(-3px) scale(1.05)",
+                            boxShadow: "0 0 18px rgba(0,242,254,0.6)"
+                        }}>
+                        View All Projects
+                    </Button>
+                </Link>
             </Flex>
-        </>
+        }
+        />
     );
 }
 
-export default Projects;
+export default FeaturedProjects

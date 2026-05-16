@@ -1,27 +1,73 @@
-import { Flex, Heading, Image, Text } from "@chakra-ui/react";
-
-import CustomHeading from "../../components/CustomHeading";
-import CustomSpacer from "../../components/CustomSpacer";
+import { Box, Card, CardBody, CardHeader, Flex, Heading, Image, Text } from "@chakra-ui/react";
+import CustomSection from "../../components/CustomSection";
 import { IAchievements } from "../../objects/ObjectsInterface";
 
 const AchievementCards = (property: IAchievements) => {
-    const logoImage = property.logoSrc;
-
-    const cardsWidth = {
-        base: "full",
-        sm: "calc((100% - 1rem) / 2)",
-        md: "calc((100% - 2rem) / 3)",
-        lg: "calc((100% - 3rem) / 3)",
-        xl: "calc((100% - 4rem) / 3)"
-    }
-
     return (
-        <Flex w={cardsWidth} flexDirection="column" textAlign="center" gap={{base: 2, sm: 1}}>
-            {logoImage ? <Image objectFit="contain" w="full" h={16} src={logoImage} alt={property.logo} mt={4} mb={8} /> : null}
-            <Heading w="full" size={{base: "sm", sm: "xs"}}>{property.title}</Heading>
-            <Text w="full" fontSize={{base: "sm", sm: "xs"}}>{property.date}</Text>
-            {property.description ? <Text w="full" fontSize="xs" color="gray">{property.description}</Text> : null}
-        </Flex>
+        <Card
+            variant={"unstyled"}
+            w={"full"}
+            display={"flex"}
+            flexDir={{base: "column", sm: "row"}}
+            borderRadius={16}
+            color={"#ddd"}
+            bgColor={"rgba(255,255,255,0.05)"}
+            border={"1px solid rgba(255,255,255,0.06)"}
+            transition={"0.3s ease"}
+            overflow={"hidden"}
+            _hover={{
+                transform: "translateY(-8px)",
+                borderColor: "rgba(0,242,254,0.4)",
+                boxShadow: "0 10px 25px rgba(0,242,254,0.15)"
+            }}
+        >
+            {!property.logoSrc ? null :
+                <Flex
+                    w={{base: "full", sm: "200px"}}
+                    p={{base: 10, sm: 6}}
+                    alignItems={"center"}
+                    bgColor={"white"}
+                >
+                    <Image
+                        src={property.logoSrc}
+                        alt={property.logo}
+                        maxW={"full"}
+                        maxH={"full"}
+                        objectFit={"contain"}
+                    />
+                </Flex>
+            }
+            <Box px={6} py={5} w={"full"}>
+                <CardHeader
+                    display={{base: "block", md: "flex"}}
+                    justifyContent={"space-between"}
+                    gap={5}
+                >
+                    <Box w={"full"}>
+                        <Heading
+                            fontSize={{base: "smaller", md: "large"}}
+                            color={"#00f2fe"}
+                        >
+                            {property.title}
+                        </Heading>
+                        <Text fontSize={{base: "xs", md: "medium"}}>{property.associate}</Text>
+                    </Box>
+                    <Text
+                        w={{base: "full", md: 48}}
+                        textAlign={{base: "left", md: "right"}}
+                        color={"#aaa"}
+                        fontSize={{base: "2xs", md: "smaller"}}
+                    >
+                        {property.date}
+                    </Text>
+                </CardHeader>
+                {!property.description ? null :
+                    <CardBody mt={{base: 4, md: 6}} fontSize={{base: "xs", md: "medium"}}>
+                        {property.description}
+                    </CardBody>
+                }
+            </Box>
+        </Card>
     );
 }
 
@@ -30,25 +76,56 @@ const Achievements = () => {
     const certificateData: IAchievements[] = require("../../objects/certificate.json").$schema;
 
     return (
-        <>
-            <CustomHeading text="My Achievements" isCenter></CustomHeading>
-
-            <Flex flexDirection="column" gap={4}>
-                <CustomHeading text="Awards" isSubheading isCenter></CustomHeading>
-                <Flex columnGap={4} rowGap={8} flexWrap="wrap" justifyContent="center">
-                    {awardsData.map(data => AchievementCards(data))}
+        <CustomSection sectionID="achievements" sectionHeader="Achievements" content={
+            <Flex flexDir={"column"} w={"full"} maxW={"750px"} m={"auto"} gap={10}>
+                <Flex flexDir={"column"} alignItems={"center"} gap={6}>
+                    <Heading fontSize={{base: "large", md: "2xl"}} color={"#00f2fe"}>Awards</Heading>
+                    <Flex
+                        w={"full"}
+                        maxW={"750px"}
+                        m={"auto"}
+                        flexDir={"column"}
+                        gap={4}
+                    >
+                        {awardsData.map((awardItem) => {
+                            return (
+                                <AchievementCards
+                                    title={awardItem.title}
+                                    associate={awardItem.associate}
+                                    date={awardItem.date}
+                                    description={awardItem.description}
+                                    logo={awardItem.logo}
+                                    logoSrc={awardItem.logoSrc}
+                                />
+                            );
+                        })}
+                    </Flex>
+                </Flex>
+                <Flex flexDir={"column"} alignItems={"center"} gap={6}>
+                    <Heading fontSize={{base: "large", md: "2xl"}} color={"#00f2fe"}>Certification</Heading>
+                    <Flex
+                        w={"full"}
+                        maxW={"750px"}
+                        m={"auto"}
+                        flexDir={"column"}
+                        gap={4}
+                    >
+                        {certificateData.map((certificateItem) => {
+                            return (
+                                <AchievementCards
+                                    title={certificateItem.title}
+                                    associate={certificateItem.associate}
+                                    date={certificateItem.date}
+                                    description={certificateItem.description}
+                                    logo={certificateItem.logo}
+                                    logoSrc={certificateItem.logoSrc}
+                                />
+                            );
+                        })}
+                    </Flex>
                 </Flex>
             </Flex>
-
-            <CustomSpacer size={16} />
-
-            <Flex flexDirection="column" gap={4}>
-                <CustomHeading text="Certification" isSubheading isCenter></CustomHeading>
-                <Flex columnGap={4} rowGap={8} flexWrap="wrap" justifyContent="center">
-                    {certificateData.map(data => AchievementCards(data))}
-                </Flex>
-            </Flex>
-        </>
+        }/>
     );
 }
 

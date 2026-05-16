@@ -1,6 +1,7 @@
 {
     "$schema": [
         {
+            "id": "ncs",
             "type": "WORK",
             "institution": "NCS Pte Ltd",
             "location": "Singapore",
@@ -15,14 +16,14 @@
             ],
             "projects": [
                 {
+                    "id": "ncs-nhg",
                     "name": "NHG NBS - RPA",
                     "description": "Automating bills verification on National Billing System (NBS) using RPA unattended robot with UiPath Studio across 6 institutions in NHG Health cluster",
                     "from": "Mar 2025",
                     "to": null,
-                    "thumbnail": "/portfolio/static/images/projects/NCS/NHG NBS RPA/thumbnail.jpeg",
                     "role": [
                         "Gather and analyze requirements from key stakeholders in Finance, Business Office, and Operations departments across 6 institutions in NHG Health cluster to identify key processes for automation",
-                        "Collaborated within a team of 6 to design and develop 50+ RPA workflows, utilizing UiPath Studio to automate the bill verification process, improving accuracy and efficiency across institutions",
+                        "Collaborate within a team of 6 to design and develop 50+ RPA workflows, utilizing UiPath Studio to automate the bill verification process, improving accuracy and efficiency across institutions",
                         "Deploy RPA workflows to each individual stakeholders, ensuring smooth execution in the production environment",
                         "Document comprehensive user guides for stakeholders to support the adoption of RPA workflows",
                         "Investigate and resolve issues reported by stakeholders, collaborating with them to understand the root cause and implement fixes"
@@ -31,11 +32,11 @@
                         "UiPath"
                     ]
                 }, {
+                    "id": "ncs-singtel",
                     "name": "Singtel RPA Migration",
                     "description": "Migration of 300+ Singtel RPA workflows across 10+ tenants from UiPath Studio to Power Automate",
                     "from": "Jul 2024",
                     "to": "Mar 2025",
-                    "thumbnail": "/portfolio/static/images/projects/NCS/Singtel RPA/thumbnail.jpeg",
                     "role": [
                         "Ensured proper functionality of 300+ RPA workflows migrated from UiPath Studio to Power Automate, conducting thorough testing to deliver tested outputs for user verification",
                         "Collaborate with users from 10+ tenants and development teams in Cheng Du and Singapore, involving over 20+ developers, to identify and resolve any issues during testing and migration, ensuring smooth and accurate execution of the workflows",
@@ -45,11 +46,11 @@
                         "Microsoft Power Automate"
                     ]
                 }, {
+                    "id": "ncs-nyp",
                     "name": "NYP Migration Website",
                     "description": "Migration of 8 Nanyang Polytechnic (NYP) websites into Adobe Experience Manager (AEM)",
                     "from": "May 2023",
                     "to": "Jun 2024",
-                    "thumbnail": "/portfolio/static/images/projects/NCS/NYP Migration/thumbnail.png",
                     "role": [
                         "Worked in a team of 6 to develop 50+ components and 30+ templates in AEM for page content replication across 8 NYP websites",
                         "Collaborated with frontend developers to integrate frontend scripts (HTML, CSS, TypeScript) to backend logic using AEM API, ensuring seamless functionality of the user interface (UI) and user experience (UX)",
@@ -103,10 +104,9 @@
                         }
                     ]
                 }
-            ],
-            "topPosition": 0,
-            "stickyHeight": 975
+            ]
         }, {
+            "id": "nus-iss",
             "type": "STUDY",
             "institution": "NUS-ISS",
             "location": "Singapore",
@@ -118,10 +118,9 @@
             "description": [
                 "Courses include Essential Practices for Agile Teams, Software Analysis & Design, Software Design Patterns, and DevSecOps Engineering and Automation"
             ],
-            "projects": [],
-            "topPosition": 320,
-            "stickyHeight": 335
+            "projects": []
         }, {
+            "id": "uow",
             "type": "STUDY",
             "institution": "SIM - University of Wollongong (UOW)",
             "location": "Singapore",
@@ -135,11 +134,11 @@
             ],
             "projects": [
                 {
+                    "id": "uow-face-animation",
                     "name": "Face Animation: A Deep Learning Approach",
                     "description": "Built a face animation system using a deep learning approach with Generative Adversarial Networks (GAN) model",
                     "from": "Jan 2022",
                     "to": "May 2022",
-                    "thumbnail": "/portfolio/static/images/projects/UOW/Face Animation/thumbnail.png",
                     "role": [
                         "Led the development of the GAN model for the face animation system",
                         "Worked closely in a team of 5 to build the deep learning model, ensuring optimal accuracy throughout the process",
@@ -170,11 +169,11 @@
                         }
                     ]
                 }, {
+                    "id": "uow-gift-shop",
                     "name": "Gift Shop Website",
                     "description": "Developed a prototype of a gift shop website using ASP.NET framework",
                     "from": "Jan 2021",
                     "to": "Feb 2021",
-                    "thumbnail": "/portfolio/static/images/projects/UOW/Gift Shop/thumbnail.png",
                     "role": [
                         "Developed a functional prototype of a gift shop website using the ASP.NET framework",
                         "Designed and implemented both frontend and backend components, ensuring smooth integration and usability"
@@ -235,11 +234,11 @@
                         }
                     ]
                 }, {
+                    "id": "uow-room-booking",
                     "name": "Room Booking System",
                     "description": "Developed a room booking system with role-based access control for staff, students, and super-users",
                     "from": "Apr 2020",
                     "to": "May 2020",
-                    "thumbnail": "/portfolio/static/images/projects/UOW/Room Booking/thumbnail.png",
                     "role": [
                         "Led a team of 6 to develop the system throughout the development life-cycle",
                         "Monitored the development progress and system quality, ensuring timely project delivery",
@@ -285,10 +284,9 @@
                         }
                     ]
                 }
-            ],
-            "topPosition": 1280,
-            "stickyHeight": 335
+            ]
         }, {
+            "id": "sim",
             "type": "STUDY",
             "institution": "Singapore Institute of Management (SIM)",
             "location": "Singapore",
@@ -300,10 +298,9 @@
             "description": [
                 "GPA: 3.90 / 4.00"
             ],
-            "projects": [],
-            "topPosition": 1600,
-            "stickyHeight": 335
+            "projects": []
         }, {
+            "id": "pb",
             "type": "WORK",
             "institution": "PT Pan Baruna",
             "location": "Indonesia",
@@ -316,9 +313,7 @@
                 "Thoroughly examined and audited monthly records on transactions in the system and bank statements to ensure accuracy and free from discrepancy",
                 "Handled, organized, and in-charged of overall administrative tasks for colleagues such as documentation and photo-copying"
             ],
-            "projects": [],
-            "topPosition": 2240,
-            "stickyHeight": 335
+            "projects": []
         }
     ]
 }

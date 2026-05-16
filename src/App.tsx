@@ -1,9 +1,9 @@
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
 
 import './App.css';
-
 import Layout from './pages/Layout';
 import Home from './pages/Home';
+import { Box } from '@chakra-ui/react';
 import Projects from './pages/Projects';
 import { useEffect } from 'react';
 import { scroller } from 'react-scroll';
@@ -34,6 +34,7 @@ function App() {
 
   return (
     <>
+      <Box id="top" h={{base: "14", md: "20"}} mb={"1"}></Box>
       <BrowserRouter>
         <PageLoadOnScroll/>
         <Routes>

@@ -1,37 +1,31 @@
-export interface IAboutMe {
-    header: string,
-    text: string
-}
-
 export interface IProjectImage {
     imageDesc?: string,
     imageSrc: string
 }
 
 export interface IProject {
+    id: string,
     name: string,
     description: string,
     from: string,
     to?: string,
-    thumbnail?: string,
     role?: string[],
     tools?: string[],
     images?: IProjectImage[]
 }
 
 export interface IExperience {
+    id: string,
     type: string,
+    title: string,
     institution: string,
     location: string,
     logo: string,
     logoSrc?: string,
-    title: string | null,
     from: string,
     to?: string,
     description: string[],
-    projects: IProject[],
-    topPosition: number,
-    stickyHeight: number
+    projects: IProject[]
 }
 
 export interface IContact {
@@ -50,11 +44,5 @@ export interface IAchievements {
 
 export interface ISkills {
     category: string,
-    items: ISkillItems[]
-}
-
-export interface ISkillItems {
-    title: string,
-    logo: string,
-    logoSrc?: string
+    items: string[]
 }
