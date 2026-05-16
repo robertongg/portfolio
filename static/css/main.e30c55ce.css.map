@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.e30c55ce.css","mappings":"AAAA,EAGE,qBAAsB,CACtB,+BAAmC,CAHnC,QAAS,CACT,SAGF,CAEA,KACE,kBAAmB,CACnB,UACF","sources":["App.css"],"sourcesContent":["* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: 'Segoe UI', sans-serif;\n}\n\nbody {\n  background: #0f0f1a;\n  color: white;\n}"],"names":[],"sourceRoot":""}
