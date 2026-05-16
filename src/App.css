@@ -6,6 +6,6 @@
 }
 
 body {
-  background: #0f0f1a;
-  color: white;
+  background: #0f0f1a !important;
+  color: white !important;
 }
